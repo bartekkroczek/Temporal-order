@@ -1,0 +1,9 @@
+﻿﻿Brawo, ukończyłeś/aś pierwszą część zadania
+
+Twój procent poprawności to:
+<--insert-->.
+
+Pamiętaj, Twoim zadaniem jest zdecydować po której stronie pojawiła się DŁUŻSZA strzałka.
+Zadanie będzie robić się coraz trudniejsze, więc skoncentruj się.
+
+Nacisnij SPACJĘ by kontynuować zadanie.

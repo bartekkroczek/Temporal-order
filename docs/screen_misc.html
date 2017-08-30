@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>screen_misc.py</title>
+  <link rel="stylesheet" href="pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div class='section'>
+    <div class='docs'><h1>screen_misc.py</h1></div>
+  </div>
+  <div class='clearall'>
+  <div class='section' id='section-0'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-0'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">logging</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-1'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-1'>#</a>
+      </div>
+      <p>Funcion that check current screen resolution. Raise OSError if can't recognise OS!
+* :return: (width, height) tuple with screen resolution.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">def</span> <span class="nf">get_screen_res</span><span class="p">():</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-2'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-2'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="kn">import</span> <span class="nn">platform</span>
+
+    <span class="n">system</span> <span class="o">=</span> <span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s1">&#39;Linux&#39;</span> <span class="ow">in</span> <span class="n">system</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">subprocess</span>
+        <span class="kn">import</span> <span class="nn">re</span>
+
+        <span class="n">output</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="s1">&#39;xrandr | grep &quot;\*&quot; | cut -d&quot; &quot; -f4&#39;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">communicate</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">valid_res</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;^\d{3,4}x\d{3,4}$&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_res</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="s1">&#39; xdpyinfo | grep dimensions | cut -d&quot; &quot; -f7&#39;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">communicate</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_res</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span><span class="p">(</span><span class="s1">&#39;OS ERROR - no way of determine screen res&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span>
+                <span class="s2">&quot;Humanity need more time to come up with efficient way of checking screen resolution of your hamster&quot;</span><span class="p">)</span>
+        <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">output</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="s1">&#39;Windows&#39;</span> <span class="ow">in</span> <span class="n">system</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">win32api</span> <span class="kn">import</span> <span class="n">GetSystemMetrics</span>
+
+        <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">GetSystemMetrics</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">GetSystemMetrics</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>  <span class="c1"># can&#39;t recognise OS</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span><span class="p">(</span><span class="s1">&#39;OS ERROR - no way of determine screen res&#39;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span><span class="s2">&quot;get_screen_res function can&#39;t recognise your OS&quot;</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Screen res set as: {}x{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-3'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-3'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">def</span> <span class="nf">get_frame_rate</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">legal_frame_rates</span><span class="o">=</span><span class="p">(</span><span class="mi">60</span><span class="p">,)):</span>
+    <span class="n">frame_rate</span> <span class="o">=</span> <span class="n">win</span><span class="o">.</span><span class="n">getActualFrameRate</span><span class="p">(</span><span class="n">nIdentical</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">nMaxFrames</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">frame_rate</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="n">frame_rate</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">frame_rate</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">frame_rate</span><span class="p">))</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Detected framerate: {} frames per sec.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">frame_rate</span><span class="p">))</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-4'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-4'>#</a>
+      </div>
+      <p>assert frame_rate in legal_frame_rates, 'Illegal frame rate.'</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">return</span> <span class="n">frame_rate</span>
+
+</pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+</div>
+</body>

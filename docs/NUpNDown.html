@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>NUpNDown.py</title>
+  <link rel="stylesheet" href="pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div class='section'>
+    <div class='docs'><h1>NUpNDown.py</h1></div>
+  </div>
+  <div class='clearall'>
+  <div class='section' id='section-0'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-0'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">AbstractAdaptive</span> <span class="kn">import</span> <span class="n">AbstractAdaptive</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-1'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-1'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">class</span> <span class="nc">NUpNDown</span><span class="p">(</span><span class="n">AbstractAdaptive</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-2'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-2'>#</a>
+      </div>
+      <p>This class will be returning some value in any iteration.
+At start it will be <strong>start_val</strong>.
+After <strong>n_up</strong> correct answers (set_corr(True))
+value will be increased by <strong>step</strong>.
+Analogically, after <strong>n_down</strong> * (set_corr(False)) value will be
+decreased by <strong>step</strong>.
+If swipe (change between series of up's of series of down's)
+will be detected <strong>max_revs</strong> times, algorithm will be terminated.</p>
+<ul>
+<li>:param <strong>n_up</strong>: No of set_corr(True) before inc value.</li>
+<li>:param <strong>n_down</strong>: No of set_corr(False) before dec value.</li>
+<li>:param <strong>max_revs</strong>: No of swipes before end of alg.</li>
+<li>:param <strong>start_val</strong>: Initial value.</li>
+<li>:param <strong>step_up</strong>: Values of inc with n_up.</li>
+<li>:param <strong>step_down</strong>: Values of dec with n_down.</li>
+</ul>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_up</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n_down</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_revs</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">start_val</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">step_up</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">step_down</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-3'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-3'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-4'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-4'>#</a>
+      </div>
+      <p>Some vals must be positive, check if that true.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="n">n_up</span><span class="p">,</span> <span class="n">n_down</span><span class="p">,</span> <span class="n">max_revs</span><span class="p">,</span> <span class="n">step_up</span><span class="p">])),</span> <span class="s1">&#39;Illegal init value&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_up</span> <span class="o">=</span> <span class="n">n_up</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_down</span> <span class="o">=</span> <span class="n">n_down</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_revs</span> <span class="o">=</span> <span class="n">max_revs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">curr_val</span> <span class="o">=</span> <span class="n">start_val</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">step_up</span> <span class="o">=</span> <span class="n">step_up</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">step_down</span> <span class="o">=</span> <span class="n">step_down</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">jumps</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no_corr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no_incorr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">revs_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_corr_flag</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">switch_in_last_trail_flag</span> <span class="o">=</span> <span class="bp">False</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-5'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-5'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-6'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-6'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-7'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-7'>#</a>
+      </div>
+      <p>Set_corr wasn't used after last iteration. That's quite bad.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">set_corr_flag</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot; class.set_corr() must be used at least once &quot;</span>
+                            <span class="s2">&quot;in any iteration!&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_corr_flag</span> <span class="o">=</span> <span class="bp">False</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-8'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-8'>#</a>
+      </div>
+      <p>check if it's time to stop alg.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">revs_count</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_revs</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">curr_val</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span><span class="p">()</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-9'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-9'>#</a>
+      </div>
+      <p>This func determine changes in value returned by next.</p>
+<p>:param <strong>corr</strong>: Correctness in last iteration.</p>
+<p>:return: None</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="nf">set_corr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corr</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-10'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-10'>#</a>
+      </div>
+      <p>check if corr val make sense</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="nb">bool</span><span class="p">),</span> <span class="s1">&#39;Correctness must be a boolean value&#39;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_corr_flag</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c1"># set_corr are used, set flag.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">switch_in_last_trail_flag</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">jump</span> <span class="o">=</span> <span class="mi">0</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-11'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-11'>#</a>
+      </div>
+      <p>increase no of corr or incorr ans in row.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">if</span> <span class="n">corr</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_corr_in_a_row</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_incorr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_corr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_incorr_in_a_row</span> <span class="o">+=</span> <span class="mi">1</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-12'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-12'>#</a>
+      </div>
+      <p>check if it's time to change returned value</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_up</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_corr_in_a_row</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">curr_val</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">step_up</span>
+            <span class="n">jump</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># mean increase</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_down</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_incorr_in_a_row</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">curr_val</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">step_down</span>
+            <span class="n">jump</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># mean decrease</span>
+
+        <span class="k">if</span> <span class="n">jump</span><span class="p">:</span>  <span class="c1"># check if jump was also a switch</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span><span class="p">:</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-13'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-13'>#</a>
+      </div>
+      <p>it was first jump, remember direction.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>                <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span> <span class="o">=</span> <span class="n">jump</span>
+            <span class="k">elif</span> <span class="n">jump</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span><span class="p">:</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-14'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-14'>#</a>
+      </div>
+      <p>yes, it was switch.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>                <span class="bp">self</span><span class="o">.</span><span class="n">revs_count</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span> <span class="o">=</span> <span class="n">jump</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">switch_in_last_trail_flag</span> <span class="o">=</span> <span class="bp">True</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-15'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-15'>#</a>
+      </div>
+      <p>clear counters after jump</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="bp">self</span><span class="o">.</span><span class="n">no_incorr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_corr_in_a_row</span> <span class="o">=</span> <span class="mi">0</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-16'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-16'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="nf">get_jump_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_jump_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">switch_in_last_trail_flag</span>
+
+</pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+</div>
+</body>
