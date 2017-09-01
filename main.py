@@ -14,8 +14,8 @@ from misc.screen_misc import get_screen_res, get_frame_rate
 
 # GLOBALS
 STIM_SIZE = 30
-VISUAL_OFFSET = 90
-STIM_COLOR = 'lightgrey'
+VISUAL_OFFSET = 60
+STIM_COLOR = 'grey'
 KEYS = ['left', 'right']
 
 RESULTS = list()
@@ -117,9 +117,9 @@ def main():
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
 
-        fix_stim = visual.TextStim(win, text='+', height=3 * STIM_SIZE, color=STIM_COLOR)
-        arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=3 * STIM_SIZE,
-                                      pos=(0, -2.5 * VISUAL_OFFSET))
+        fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
+        arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=100,
+                                      pos=(0, -75))
 
         # === Load data, configure log ===
 

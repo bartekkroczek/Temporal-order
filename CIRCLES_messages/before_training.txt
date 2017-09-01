@@ -1,14 +1,8 @@
-W tym po lewej i prawej stronie ekranu będą pojawiać się dwie figury. 
-ZAWSZE jedna z figur będzie pojawiać się na ekranie nieco wcześniej niż druga. 
-
-Twoim zadaniem jest wskazać, która z figur pojawiła się na ekranie PIERWSZA.
+Brawo, przed Toba analogiczne zadanie do poprzedniego.
 
 Naciśnij lewą strzałkę jeśli to po lewej stronie pojawiła się PIERWSZA figura
 lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA figura.
 
-W tym zadaniu liczy się Twoja poprawność.
-Szybkość odpowiedzi nie ma dla nas znaczenia,
-ale masz maksymalnie 4 sekundy na udzielenie odpowiedzi,
-tak więc nie możesz zwlekać zbyt długo. Powodzenia!
+Powodzenia
 
 Nacisnij SPACJĘ by przejść do ZADANIA.
