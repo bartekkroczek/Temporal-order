@@ -1,7 +1,8 @@
-W tym po lewej i prawej stronie ekranu będą pojawiać się dwie figury. 
+W tym zadaniu po lewej i prawej stronie ekranu będą pojawiać się dwie figury. 
 ZAWSZE jedna z figur będzie pojawiać się na ekranie nieco wcześniej niż druga. 
 
 Twoim zadaniem jest wskazać, która z figur pojawiła się na ekranie PIERWSZA.
+Na początku zadanie to będzie proste, w dalszej części zadania zrobi się trudniejsze.
 
 Naciśnij lewą strzałkę jeśli to po lewej stronie pojawiła się PIERWSZA figura
 lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA figura.
