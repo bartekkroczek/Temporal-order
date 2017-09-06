@@ -19,13 +19,19 @@ STIM_COLOR = 'grey'
 KEYS = ['left', 'right']
 
 RESULTS = list()
-RESULTS.append(['PART_ID', 'Trial', 'Stimuli', 'Training', 'Training_level', 'FIXTIME', 'TIME', 'Correct', 'SOA',
-                'Level', 'Reversal', 'Reversal_count', 'Latency'])
+RESULTS.append(
+    ['PART_ID', 'Trial', 'Stimuli', 'Version', 'Training', 'Training_level', 'FIXTIME', 'TIME', 'Correct', 'SOA',
+     'Level', 'Reversal', 'Reversal_count', 'Latency'])
 
 
 class CorrectStim(object):  # Correct Stimulus Enumerator
     LEFT = 1
     RIGHT = 2
+
+
+class QuestonVersion(object):
+    FIRST_SHOWED = 'First_showed'
+    FIRST_HIDDEN = 'First_hidden'
 
 
 @atexit.register
@@ -109,11 +115,13 @@ def main():
                                     fillColor=STIM_COLOR, pos=(-2 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=6 * STIM_SIZE, height=6 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(2 * VISUAL_OFFSET, 0))
+            version = QuestonVersion.FIRST_SHOWED
         elif proc_version == 'CIRCLES':
             left_stim = visual.Circle(win, radius=3 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                       pos=(-2 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=3 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(2 * VISUAL_OFFSET, 0))
+            version = QuestonVersion.FIRST_HIDDEN
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
 
@@ -140,12 +148,13 @@ def main():
             train_level += 1
             for soa in level:
                 idx += 1
-                corr, rt = run_trial(conf, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+                corr, rt = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
                                      response_clock)
                 corr = int(corr)
                 correct_trials += corr
                 RESULTS.append(
-                    [PART_ID, idx, proc_version, 1, train_level, conf['FIXTIME'], conf['TIME'], corr, soa, '-', '-',
+                    [PART_ID, idx, proc_version, version, 1, train_level, conf['FIXTIME'], conf['TIME'], corr, soa, '-',
+                     '-',
                      '-', rt])
 
         train_corr = int((float(correct_trials) / len(training)) * 100)
@@ -157,7 +166,7 @@ def main():
 
         old_rev_count_val = -1
         for idx, soa in enumerate(experiment, idx):
-            corr, rt = run_trial(conf, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+            corr, rt = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
                                  response_clock)
             level, reversal, revs_count = map(int, experiment.get_jump_status())
             if old_rev_count_val != revs_count:
@@ -167,7 +176,8 @@ def main():
                 rev_count_val = '-'
 
             RESULTS.append(
-                [PART_ID, idx, proc_version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa, level, reversal,
+                [PART_ID, idx, proc_version, version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa, level,
+                 reversal,
                  rev_count_val, rt])
             experiment.set_corr(corr)
 
@@ -178,7 +188,7 @@ def main():
     win.close()
 
 
-def run_trial(config, fix_stim, left_stim, right_stim, soa, win, arrow_label, response_clock):
+def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_label, response_clock):
     trial_type = random.choice([CorrectStim.LEFT, CorrectStim.RIGHT])
     stim = left_stim if trial_type == CorrectStim.LEFT else right_stim
     stim_name = 'left' if trial_type == CorrectStim.LEFT else 'right'
@@ -190,15 +200,26 @@ def run_trial(config, fix_stim, left_stim, right_stim, soa, win, arrow_label, re
     for _ in range(config['DELAY']):
         win.flip()
         check_exit()
-    for _ in range(soa):  # just one stims showed
-        stim.draw()
-        win.flip()
-        check_exit()
-    for _ in range(config['TIME']):
-        left_stim.draw()
-        right_stim.draw()
-        win.flip()
-        check_exit()
+    if version == QuestonVersion.FIRST_SHOWED:
+        for _ in range(soa):  # just one stims showed
+            stim.draw()
+            win.flip()
+            check_exit()
+        for _ in range(config['TIME']):
+            left_stim.draw()
+            right_stim.draw()
+            win.flip()
+            check_exit()
+    elif version == QuestonVersion.FIRST_HIDDEN:
+        for _ in range(config['TIME']):
+            left_stim.draw()
+            right_stim.draw()
+            win.flip()
+            check_exit()
+        for _ in range(soa):  # just one stims showed
+            stim.draw()
+            win.flip()
+            check_exit()
 
     corr = False  # Used if timeout
     win.callOnFlip(response_clock.reset)
@@ -212,6 +233,9 @@ def run_trial(config, fix_stim, left_stim, right_stim, soa, win, arrow_label, re
             rt = response_clock.getTime()
             break
         check_exit()
+    if version == QuestonVersion.FIRST_HIDDEN:  # Yep, I know, that's ugly
+        corr = not corr
+
     return corr, rt
 
 
