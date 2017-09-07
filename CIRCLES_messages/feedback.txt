@@ -3,7 +3,7 @@
 Twój procent poprawności to:
 <--insert-->.
 
-Pamiętaj, Twoim zadaniem jest zdecydować, która z figur pojawiał się wcześniej niż druga.
+Pamiętaj, Twoim zadaniem jest zdecydować, która z dwóch figur ZNIKŁA JAKO PIERWSZA.
 Zadanie będzie robić się coraz trudniejsze, więc skoncentruj się.
 
 Nacisnij SPACJĘ by kontynuować zadanie.

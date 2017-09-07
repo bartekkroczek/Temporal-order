@@ -1,7 +1,12 @@
-Brawo, przed Toba analogiczne zadanie do poprzedniego.
+Brawo, skończyłes pierwsze zadanie.
 
-Naciśnij lewą strzałkę jeśli to po lewej stronie pojawiła się PIERWSZA figura
-lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA figura.
+W kolejnym zadaniu będziesz decydować, która z dwóch figur ZNIKŁA JAKO PIERWSZA.
+Na początku na ekranie będą wyswietlać się dwie figury obok siebie.
+Następnie figury zniknął, zawsze jedna nieco wczesniej niż druga.
+
+
+Naciśnij lewą strzałkę jeśli to po lewej stronie figura ZNIKŁA JAKO PIERWSZA
+lub prawą strzałkę jeśli to po prawej stronie figura ZNIKŁA JAKO PIERWSZA
 
 Powodzenia
 
