@@ -15,7 +15,7 @@ from misc.screen_misc import get_screen_res, get_frame_rate
 # GLOBALS
 STIM_SIZE = 30
 VISUAL_OFFSET = 60
-STIM_COLOR = 'grey'
+STIM_COLOR = '#8b8989'
 KEYS = ['left', 'right']
 
 RESULTS = list()
@@ -111,16 +111,16 @@ def main():
 
     for proc_version in ['SQUARES', 'CIRCLES']:
         if proc_version == 'SQUARES':
-            left_stim = visual.Rect(win, width=6 * STIM_SIZE, height=6 * STIM_SIZE, lineColor=STIM_COLOR,
-                                    fillColor=STIM_COLOR, pos=(-2 * VISUAL_OFFSET, 0))
-            right_stim = visual.Rect(win, width=6 * STIM_SIZE, height=6 * STIM_SIZE, lineColor=STIM_COLOR,
-                                     fillColor=STIM_COLOR, pos=(2 * VISUAL_OFFSET, 0))
+            left_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
+                                    fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
+            right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
+                                     fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
             version = QuestonVersion.FIRST_SHOWED
         elif proc_version == 'CIRCLES':
-            left_stim = visual.Circle(win, radius=3 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
-                                      pos=(-2 * VISUAL_OFFSET, 0))
-            right_stim = visual.Circle(win, radius=3 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
-                                       pos=(2 * VISUAL_OFFSET, 0))
+            left_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
+                                      pos=(-1 * VISUAL_OFFSET, 0))
+            right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
+                                       pos=(1 * VISUAL_OFFSET, 0))
             version = QuestonVersion.FIRST_HIDDEN
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
