@@ -3,7 +3,6 @@ ZAWSZE jedna z tych dwóch figur będzie pojawiać się na ekranie nieco wcześn
 
 Twoim zadaniem jest wskazać, która z figur pojawiła się na ekranie PIERWSZA.
 Na początku zadanie to będzie proste, w dalszej części zadania zrobi się znacznie trudniejsze.
-To zadanie jest dosć męczące i wymaga koncentracji, postaraj się skupić przez najbliższe kilka minut.
 
 Naciśnij lewą strzałkę jeśli to po lewej stronie pojawiła się PIERWSZA figura
 lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA figura.
@@ -11,6 +10,8 @@ lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA fi
 W tym zadaniu liczy się Twoja poprawność.
 Szybkość odpowiedzi nie ma dla nas znaczenia,
 ale masz maksymalnie 4 sekundy na udzielenie odpowiedzi,
-tak więc nie możesz zwlekać zbyt długo. Powodzenia!
+tak więc nie możesz zwlekać zbyt długo.
+
+To zadanie jest dosć męczące i wymaga koncentracji, postaraj się skupić przez najbliższe kilka minut.
 
 Nacisnij SPACJĘ by przejść do ZADANIA.
