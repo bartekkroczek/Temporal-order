@@ -15,7 +15,7 @@ from misc.screen_misc import get_screen_res, get_frame_rate
 # GLOBALS
 STIM_SIZE = 30
 VISUAL_OFFSET = 60
-STIM_COLOR = '#8b8989'
+STIM_COLOR = '#606060'
 KEYS = ['left', 'right']
 
 RESULTS = list()

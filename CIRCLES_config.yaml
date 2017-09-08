@@ -1,5 +1,5 @@
 # All values in no. of frames.
-Training: [{'soa': 40, 'reps':8}, {'soa': 20, 'reps':8}, {'soa': 15, 'reps':8},{'soa': 10, 'reps':8}]
+Training: [{'soa': 40, 'reps':8}, {'soa': 15, 'reps':8}, {'soa': 10, 'reps':8},{'soa': 5, 'reps':8}]
 # List describing training.
 # In example above it will be four levels of training (because of 4 items in list, may be less, may be more)
 # First training block contains 6 trials, (reps = 6) of soa equal to 30 etc...
