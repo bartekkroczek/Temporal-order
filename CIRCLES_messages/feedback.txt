@@ -1,9 +1,14 @@
-﻿﻿Brawo, ukończyłeś/aś pierwszą część zadania
-
-Twój procent poprawności to:
-<--insert-->.
+﻿﻿Brawo, ukończyłeś/aś trening
 
 Pamiętaj, Twoim zadaniem jest zdecydować, która z dwóch figur ZNIKŁA JAKO PIERWSZA.
+
 Zadanie będzie robić się coraz trudniejsze, więc skoncentruj się.
 
-Nacisnij SPACJĘ by kontynuować zadanie.
+Nacisnij SPACJĘ by rozpocząć
+
+
+
+
+
+
+

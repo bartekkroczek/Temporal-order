@@ -1,9 +1,10 @@
-﻿﻿Brawo, ukończyłeś/aś pierwszą część zadania
+﻿﻿Brawo, ukończyłeś/aś trening
 
-Twój procent poprawności to:
-<--insert-->.
+Pamiętaj, Twoim zadaniem jest wskazać, która z figur POJAWIŁA się PIERWSZA.
 
-Pamiętaj, Twoim zadaniem jest zdecydować, która z figur pojawiał się wcześniej niż druga.
+Naciśnij lewą strzałkę, jeśli to po lewej stronie pojawiła się pierwsza figura,
+lub prawą strzałkę, jeśli to po prawej stronie pojawiła się pierwsza figura.
+
 Zadanie będzie robić się coraz trudniejsze, więc skoncentruj się.
 
-Nacisnij SPACJĘ by kontynuować zadanie.
+Nacisnij SPACJĘ by rozpocząć.

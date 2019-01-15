@@ -1,17 +1,19 @@
-W tym zadaniu po lewej i prawej stronie ekranu będzie pojawiać się figury.
-ZAWSZE jedna z tych dwóch figur będzie pojawiać się na ekranie nieco wcześniej niż druga.
+﻿W tym zadaniu, będą pojawiąć się obok siebie dwa kwadraty.
+ZAWSZE jeden z tych dwóch kwadratów, losowo po lewej lub prawej stronie,
+będzie pojawiać się na ekranie nieco wcześniej niż drugi.
 
-Twoim zadaniem jest wskazać, która z figur pojawiła się na ekranie PIERWSZA.
+Twoim zadaniem jest wskazać, który z kwadratów pojawił się na ekranie jako PIERWSZY (czyli WCZEŚNIEJ od drugiego).
+
 Na początku zadanie to będzie proste, w dalszej części zadania zrobi się znacznie trudniejsze.
 
-Naciśnij lewą strzałkę jeśli to po lewej stronie pojawiła się PIERWSZA figura
-lub prawą strzałkę jeśli to po prawej stronie wyświetliła się PIERWSZA figura.
 
-W tym zadaniu liczy się Twoja poprawność.
-Szybkość odpowiedzi nie ma dla nas znaczenia,
+UWAGA! Łatwo się pomylić i wykonywać zadanie na odwrót, upewnij się, że rozumiesz, ZAPAMIĘTAJ:
+
+Naciśnij lewą strzałkę jeśli to po lewej stronie pojawił się PIERWSZY kwadrat
+lub prawą strzałkę jeśli to po prawej stronie wyświetlił się PIERWSZY kwadrat.
+
+Szybkość odpowiedzi nie ma znaczenia,
 ale masz maksymalnie 4 sekundy na udzielenie odpowiedzi,
 tak więc nie możesz zwlekać zbyt długo.
 
-To zadanie jest dosć męczące i wymaga koncentracji, postaraj się skupić przez najbliższe kilka minut.
-
-Nacisnij SPACJĘ by przejść do ZADANIA.
+Nacisnij SPACJĘ by przejść do treningu

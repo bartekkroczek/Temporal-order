@@ -20,8 +20,8 @@ KEYS = ['left', 'right']
 
 RESULTS = list()
 RESULTS.append(
-    ['PART_ID', 'Trial', 'Stimuli', 'Version', 'Training', 'Training_level', 'FIXTIME', 'TIME', 'Correct', 'SOA',
-     'Level', 'Reversal', 'Reversal_count', 'Latency'])
+    ['PART_ID', 'Trial', 'Stimuli', 'Version', 'Training', 'Training_level', 'FIXTIME', 'TIME','Correct', 
+	'SOA','Reversal', 'Reversal_count', 'Latency', 'stim_name'])
 
 
 class CorrectStim(object):  # Correct Stimulus Enumerator
@@ -109,25 +109,36 @@ def main():
     logging.info('FRAME RATE: {}'.format(FRAME_RATE))
     logging.info('SCREEN RES: {}'.format(SCREEN_RES.values()))
 
-    for proc_version in ['SQUARES', 'CIRCLES']:
+    pos_feedb = visual.TextStim(win, text=u'Poprawna odpowied\u017A', color=STIM_COLOR, height=40)
+    neg_feedb = visual.TextStim(win, text=u'Niepoprawna odpowied\u017A', color=STIM_COLOR, height=40)
+    no_feedb = visual.TextStim(win, text=u'Nie udzieli\u0142e\u015B odpowiedzi', color=STIM_COLOR, height=40)
+
+    for proc_version in ['SQUARES','CIRCLES']:
         if proc_version == 'SQUARES':
             left_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
+            question = u'Który kwadrat pojawil sie pierwszy?'
             version = QuestonVersion.FIRST_SHOWED
+
         elif proc_version == 'CIRCLES':
             left_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                       pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(1 * VISUAL_OFFSET, 0))
+            question = u'Które kó?ko zniknelo pierwsze?'
             version = QuestonVersion.FIRST_HIDDEN
+
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
 
         fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
-        arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=100,
-                                      pos=(0, -75))
+        arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=30,
+                                      pos=(0, -200))
+
+        question_text = visual.TextStim(win, text=question, color=STIM_COLOR, height=20,
+                                      pos=(0, -180))
 
         # === Load data, configure log ===
 
@@ -148,14 +159,25 @@ def main():
             train_level += 1
             for soa in level:
                 idx += 1
-                corr, rt = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
-                                     response_clock)
+                corr, rt, stim_name = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+                                                question_text, response_clock)
                 corr = int(corr)
                 correct_trials += corr
                 RESULTS.append(
-                    [PART_ID, idx, proc_version, version, 1, train_level, conf['FIXTIME'], conf['TIME'], corr, soa, '-',
+                    [PART_ID, idx, proc_version, version, 1, train_level, conf['FIXTIME'], conf['TIME'], corr, soa,
                      '-',
-                     '-', rt])
+                     '-', rt, stim_name])
+                ### FEEDBACK
+                if corr == 1:
+                    feedb_msg = pos_feedb
+                elif corr == 0:
+                    feedb_msg = neg_feedb
+                else:
+                    feedb_msg = no_feedb
+                for _ in range(100):
+                    feedb_msg.draw()
+                    check_exit()
+                    win.flip()
 
         train_corr = int((float(correct_trials) / len(training)) * 100)
         show_info(win, join('.', proc_version + '_messages', 'feedback.txt'), insert=str(train_corr))
@@ -166,8 +188,8 @@ def main():
 
         old_rev_count_val = -1
         for idx, soa in enumerate(experiment, idx):
-            corr, rt = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
-                                 response_clock)
+            corr, rt, stim_name = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+                                            question_text, response_clock)
             level, reversal, revs_count = map(int, experiment.get_jump_status())
             if old_rev_count_val != revs_count:
                 old_rev_count_val = revs_count
@@ -176,10 +198,13 @@ def main():
                 rev_count_val = '-'
 
             RESULTS.append(
-                [PART_ID, idx, proc_version, version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa, level,
+                [PART_ID, idx, proc_version, version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa,
                  reversal,
-                 rev_count_val, rt])
+                 rev_count_val, rt, stim_name])
             experiment.set_corr(corr)
+
+            if idx == conf['MAX_TRIALS']:
+                break
 
     # === Cleaning time ===
     save_beh_results()
@@ -188,7 +213,7 @@ def main():
     win.close()
 
 
-def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_label, response_clock):
+def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,question_text, response_clock):
     trial_type = random.choice([CorrectStim.LEFT, CorrectStim.RIGHT])
     stim = left_stim if trial_type == CorrectStim.LEFT else right_stim
     stim_name = 'left' if trial_type == CorrectStim.LEFT else 'right'
@@ -220,12 +245,12 @@ def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_
             stim.draw()
             win.flip()
             check_exit()
-
     corr = False  # Used if timeout
     win.callOnFlip(response_clock.reset)
     event.clearEvents()
     for _ in range(config['RTIME']):  # Time for reaction
         arrow_label.draw()
+        question_text.draw()
         win.flip()
         keys = event.getKeys(keyList=KEYS)
         if keys:
@@ -235,8 +260,8 @@ def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_
         check_exit()
     if version == QuestonVersion.FIRST_HIDDEN:  # Yep, I know, that's ugly
         corr = not corr
-
-    return corr, rt
+	
+    return corr, rt, stim_name
 
 
 if __name__ == '__main__':
