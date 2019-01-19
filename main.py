@@ -119,7 +119,7 @@ def main():
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Kt√≥ry kwadrat pojawil sie pierwszy?'
+            question = u'KtÛry kwadrat pojawil sie pierwszy?'
             version = QuestonVersion.FIRST_SHOWED
 
         elif proc_version == 'CIRCLES':
@@ -127,7 +127,7 @@ def main():
                                       pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Kt√≥re k√≥?ko zniknelo pierwsze?'
+            question = u'KtÛre kolko zniknelo pierwsze?'
             version = QuestonVersion.FIRST_HIDDEN
 
         else:
