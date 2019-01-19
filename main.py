@@ -36,7 +36,7 @@ class QuestonVersion(object):
 
 @atexit.register
 def save_beh_results():
-    with open(join('results', PART_ID + '_beh.csv'), 'w') as beh_file:
+    with open(join('results', PART_ID + '_' + str(random.choice(range(100, 1000))) + '_beh.csv'), 'w') as beh_file:
         beh_writer = csv.writer(beh_file)
         beh_writer.writerows(RESULTS)
     logging.flush()
@@ -119,7 +119,7 @@ def main():
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Który kwadrat pojawil sie pierwszy?'
+            question = u'KtÃ³ry kwadrat pojawil sie pierwszy?'
             version = QuestonVersion.FIRST_SHOWED
 
         elif proc_version == 'CIRCLES':
@@ -127,7 +127,7 @@ def main():
                                       pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Które kó?ko zniknelo pierwsze?'
+            question = u'KtÃ³re kÃ³?ko zniknelo pierwsze?'
             version = QuestonVersion.FIRST_HIDDEN
 
         else:
