@@ -4,7 +4,7 @@ Training: [{'soa': 40, 'reps':2}, {'soa': 20, 'reps':2}, {'soa': 15, 'reps':2}]
 # In example above it will be four levels of training (because of 4 items in list, may be less, may be more)
 # First training block contains 6 trials, (reps = 6) of soa equal to 30 etc...
 MAX_TRIALS: 60
-START_SOA: 9
+START_SOA: 10
 FIXTIME: 174 # Fixation cross time
 DELAY: 10
 TIME: 40 #  presentation time

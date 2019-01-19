@@ -190,6 +190,7 @@ def main():
         for idx, soa in enumerate(experiment, idx):
             corr, rt, stim_name = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
                                             question_text, response_clock)
+            experiment.set_corr(corr)
             level, reversal, revs_count = map(int, experiment.get_jump_status())
             if old_rev_count_val != revs_count:
                 old_rev_count_val = revs_count
@@ -201,7 +202,6 @@ def main():
                 [PART_ID, idx, proc_version, version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa,
                  reversal,
                  rev_count_val, rt, stim_name])
-            experiment.set_corr(corr)
 
             if idx == conf['MAX_TRIALS']:
                 break
