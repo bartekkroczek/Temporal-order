@@ -113,7 +113,7 @@ def main():
     neg_feedb = visual.TextStim(win, text=u'Niepoprawna odpowied\u017A', color=STIM_COLOR, height=40)
     no_feedb = visual.TextStim(win, text=u'Nie udzieli\u0142e\u015B odpowiedzi', color=STIM_COLOR, height=40)
 
-    for proc_version in ['SQUARES','CIRCLES']:
+    for proc_version in ['CIRCLES']: #'SQUARES',
         if proc_version == 'SQUARES':
             left_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
@@ -174,7 +174,7 @@ def main():
                     feedb_msg = neg_feedb
                 else:
                     feedb_msg = no_feedb
-                for _ in range(100):
+                for _ in range(30):
                     feedb_msg.draw()
                     check_exit()
                     win.flip()
