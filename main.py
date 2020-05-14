@@ -10,18 +10,17 @@ import yaml
 from psychopy import visual, event, logging, gui, core
 
 from Adaptives.NUpNDown import NUpNDown
-from misc.screen_misc import get_screen_res, get_frame_rate
 
 # GLOBALS
-STIM_SIZE = 30
+STIM_SIZE = 40
 VISUAL_OFFSET = 60
 STIM_COLOR = '#606060'
 KEYS = ['left', 'right']
 
 RESULTS = list()
 RESULTS.append(
-    ['PART_ID', 'Trial', 'Stimuli', 'Version', 'Training', 'Training_level', 'FIXTIME', 'TIME','Correct', 
-	'SOA','Reversal', 'Reversal_count', 'Latency', 'stim_name'])
+    ['PART_ID', 'Trial', 'Stimuli', 'Version', 'Training', 'FIXTIME', 'TIME','Correct', 
+	'SOA','Reversal', 'Reversal_count', 'Latency', 'stim_name', 'Rating'])
 
 
 class CorrectStim(object):  # Correct Stimulus Enumerator
@@ -78,7 +77,7 @@ def show_info(win, file_name, insert=''):
     :return:
     """
     msg = read_text_from_file(file_name, insert=insert)
-    msg = visual.TextStim(win, color=STIM_COLOR, text=msg, height=STIM_SIZE - 10, wrapWidth=SCREEN_RES['width'])
+    msg = visual.TextStim(win, color=STIM_COLOR, text=msg, height=STIM_SIZE - 10, wrapWidth=SCREEN_RES[0])
     msg.draw()
     win.flip()
     key = event.waitKeys(keyList=['f7', 'return', 'space', 'left', 'right'] + KEYS)
@@ -101,25 +100,25 @@ def main():
         abort_with_error('Info dialog terminated.')
 
     # === Scene init ===
-    win = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='testMonitor', units='pix', screen=0, color='black')
+    win = visual.Window(SCREEN_RES, fullscr=True, monitor='testMonitor', units='pix', screen=0, color='black')
     event.Mouse(visible=False, newPos=None, win=win)  # Make mouse invisible
-    FRAME_RATE = get_frame_rate(win)
+    FRAME_RATE = 60
     PART_ID = info['IDENTYFIKATOR'] + info[u'P\u0141EC'] + info['WIEK']
-    logging.LogFile('results/' + PART_ID + '.log', level=logging.INFO)  # errors logging
-    logging.info('FRAME RATE: {}'.format(FRAME_RATE))
-    logging.info('SCREEN RES: {}'.format(SCREEN_RES.values()))
+    logging.LogFile(join('results', 'f{PART_ID}.log'), level=logging.INFO)  # errors logging
+    logging.info(f'FRAME RATE: {FRAME_RATE}')
+    logging.info(f'SCREEN RES: {SCREEN_RES}')
 
     pos_feedb = visual.TextStim(win, text=u'Poprawna odpowied\u017A', color=STIM_COLOR, height=40)
     neg_feedb = visual.TextStim(win, text=u'Niepoprawna odpowied\u017A', color=STIM_COLOR, height=40)
     no_feedb = visual.TextStim(win, text=u'Nie udzieli\u0142e\u015B odpowiedzi', color=STIM_COLOR, height=40)
 
-    for proc_version in ['CIRCLES']: #'SQUARES',
+    for proc_version in ['CIRCLES', 'SQUARES']: #'SQUARES',
         if proc_version == 'SQUARES':
             left_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Który kwadrat pojawil sie pierwszy?'
+            question = u'Ktory kwadrat pojawil sie pierwszy?'
             version = QuestonVersion.FIRST_SHOWED
 
         elif proc_version == 'CIRCLES':
@@ -127,13 +126,14 @@ def main():
                                       pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Które kolko zniknelo pierwsze?'
+            question = u'Ktore kolko zniknelo pierwsze?'
             version = QuestonVersion.FIRST_HIDDEN
 
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
 
-        fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
+        # fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
+        fix_stim = visual.ImageStim(win, image=join('.', 'stims', 'PRE_STIMULI.bmp'))
         arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=30,
                                       pos=(0, -200))
 
@@ -143,55 +143,20 @@ def main():
         # === Load data, configure log ===
 
         response_clock = core.Clock()
-        conf = yaml.load(open(proc_version + '_config.yaml'))
+        conf = yaml.load(open(join('.', 'configs' , f'{proc_version}_config.yaml')))
 
+        show_info(win, join('.', 'messages', f'{proc_version}_before_training.txt'))
         # === Training ===
-        training = list()
-        for train_desc in conf['Training']:
-            training.append([train_desc['soa']] * train_desc['reps'])
 
-        show_info(win, join('.', proc_version + '_messages', 'before_training.txt'))
-
-        correct_trials = 0
-        idx = 0
-        train_level = 0
-        for level in training:
-            train_level += 1
-            for soa in level:
-                idx += 1
-                corr, rt, stim_name = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
-                                                question_text, response_clock)
-                corr = int(corr)
-                correct_trials += corr
-                RESULTS.append(
-                    [PART_ID, idx, proc_version, version, 1, train_level, conf['FIXTIME'], conf['TIME'], corr, soa,
-                     '-',
-                     '-', rt, stim_name])
-                ### FEEDBACK
-                if corr == 1:
-                    feedb_msg = pos_feedb
-                elif corr == 0:
-                    feedb_msg = neg_feedb
-                else:
-                    feedb_msg = no_feedb
-                for _ in range(30):
-                    feedb_msg.draw()
-                    check_exit()
-                    win.flip()
-
-        train_corr = int((float(correct_trials) / len(training)) * 100)
-        show_info(win, join('.', proc_version + '_messages', 'feedback.txt'), insert=str(train_corr))
-
-        # === Experiment ===
-
-        experiment = NUpNDown(start_val=conf['START_SOA'], max_revs=conf['MAX_REVS'])
+        training = NUpNDown(start_val=conf['START_SOA'], max_revs=conf['MAX_REVS'])
 
         old_rev_count_val = -1
-        for idx, soa in enumerate(experiment, idx):
-            corr, rt, stim_name = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+        correct_trials = 0
+        for idx, soa in enumerate(training):
+            corr, rt, stim_name,rating = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
                                             question_text, response_clock)
-            experiment.set_corr(corr)
-            level, reversal, revs_count = map(int, experiment.get_jump_status())
+            training.set_corr(corr)
+            level, reversal, revs_count = map(int, training.get_jump_status())
             if old_rev_count_val != revs_count:
                 old_rev_count_val = revs_count
                 rev_count_val = revs_count
@@ -199,17 +164,44 @@ def main():
                 rev_count_val = '-'
 
             RESULTS.append(
-                [PART_ID, idx, proc_version, version, 0, '-', conf['FIXTIME'], conf['TIME'], int(corr), soa,
+                [PART_ID, idx, proc_version, version, 1, conf['FIXTIME'], conf['TIME'], int(corr), soa,
                  reversal,
-                 rev_count_val, rt, stim_name])
+                 rev_count_val, rt, stim_name, rating])
 
-            if idx == conf['MAX_TRIALS']:
-                break
+            ### FEEDBACK
+            if corr == 1:
+                feedb_msg = pos_feedb
+            elif corr == 0:
+                feedb_msg = neg_feedb
+            else:
+                feedb_msg = no_feedb
+            for _ in range(30):
+                feedb_msg.draw()
+                check_exit()
+                win.flip()
+            # break + jitter
+            wait_time_in_secs = 1 + random.choice(range(0, 120))/ 60.0
+            core.wait(wait_time_in_secs)
+
+
+        # === Experiment ===
+        experiment = [soa] * conf['NO_TRIALS']
+        show_info(win, join('.', 'messages', f'{proc_version}_feedback.txt'))
+
+        for idx in range(idx, conf['NO_TRIALS']+ idx):
+            corr, rt, stim_name, rating = run_trial(conf, version, fix_stim, left_stim, right_stim, soa, win, arrow_label,
+                                            question_text, response_clock)
+            RESULTS.append([PART_ID, idx, proc_version, version, 0, conf['FIXTIME'], conf['TIME'], corr, soa, '-','-', rt, stim_name, rating])
+
+            # break + jitter
+            wait_time_in_secs = 1 + random.choice(range(0, 120))/ 60.0
+            core.wait(wait_time_in_secs)
+
 
     # === Cleaning time ===
     save_beh_results()
     logging.flush()
-    show_info(win, 'end.txt')
+    show_info(win, join('.', 'messages', 'end.txt'))
     win.close()
 
 
@@ -260,11 +252,20 @@ def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_
         check_exit()
     if version == QuestonVersion.FIRST_HIDDEN:  # Yep, I know, that's ugly
         corr = not corr
-	
-    return corr, rt, stim_name
+
+	# Rating Scale
+    ratingScale = visual.RatingScale(win, size = 0.8, low = 1, high = 5, noMouse=True, 
+    markerStart = 3, stretch= 1.4, scale="1=zgadywalem, 5=jestem pewny", acceptPreText= 'Wybierz')
+    while ratingScale.noResponse:
+        ratingScale.draw()
+        win.flip()
+    rating = ratingScale.getRating()
+    win.flip()
+
+    return corr, rt, stim_name, rating
 
 
 if __name__ == '__main__':
     PART_ID = ''
-    SCREEN_RES = get_screen_res()
+    SCREEN_RES = [1920, 1080]
     main()

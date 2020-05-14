@@ -22,7 +22,7 @@ class AbstractAdaptive(object):
         pass
 
     @abstractmethod
-    def next(self):
+    def __next__(self):
         pass
 
     @abstractmethod

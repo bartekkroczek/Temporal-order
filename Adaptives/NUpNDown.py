@@ -1,4 +1,4 @@
-from AbstractAdaptive import AbstractAdaptive
+from .AbstractAdaptive import AbstractAdaptive
 
 
 class NUpNDown(AbstractAdaptive):
@@ -41,7 +41,7 @@ class NUpNDown(AbstractAdaptive):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         # Set_corr wasn't used after last iteration. That's quite bad.
         if not self.set_corr_flag:
             raise Exception(" class.set_corr() must be used at least once "
