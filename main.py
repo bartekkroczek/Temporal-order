@@ -14,7 +14,7 @@ from Adaptives.NUpNDown import NUpNDown
 # GLOBALS
 STIM_SIZE = 40
 VISUAL_OFFSET = 60
-STIM_COLOR = '#606060'
+STIM_COLOR = '#f2f2f2'
 KEYS = ['left', 'right']
 
 RESULTS = list()
@@ -104,7 +104,7 @@ def main():
     event.Mouse(visible=False, newPos=None, win=win)  # Make mouse invisible
     FRAME_RATE = 60
     PART_ID = info['IDENTYFIKATOR'] + info[u'P\u0141EC'] + info['WIEK']
-    logging.LogFile(join('results', 'f{PART_ID}.log'), level=logging.INFO)  # errors logging
+    logging.LogFile(join('results', f'{PART_ID}.log'), level=logging.INFO)  # errors logging
     logging.info(f'FRAME RATE: {FRAME_RATE}')
     logging.info(f'SCREEN RES: {SCREEN_RES}')
 
@@ -112,13 +112,13 @@ def main():
     neg_feedb = visual.TextStim(win, text=u'Niepoprawna odpowied\u017A', color=STIM_COLOR, height=40)
     no_feedb = visual.TextStim(win, text=u'Nie udzieli\u0142e\u015B odpowiedzi', color=STIM_COLOR, height=40)
 
-    for proc_version in ['CIRCLES', 'SQUARES']: #'SQUARES',
+    for proc_version in ['SQUARES', 'CIRCLES']: 
         if proc_version == 'SQUARES':
             left_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                     fillColor=STIM_COLOR, pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Rect(win, width=2 * STIM_SIZE, height=2 * STIM_SIZE, lineColor=STIM_COLOR,
                                      fillColor=STIM_COLOR, pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Ktory kwadrat pojawil sie pierwszy?'
+            question = u'Kt\u00F3ry kwadrat pojawi\u0142 si\u0119 pierwszy?'
             version = QuestonVersion.FIRST_SHOWED
 
         elif proc_version == 'CIRCLES':
@@ -126,7 +126,7 @@ def main():
                                       pos=(-1 * VISUAL_OFFSET, 0))
             right_stim = visual.Circle(win, radius=1 * STIM_SIZE, lineColor=STIM_COLOR, fillColor=STIM_COLOR,
                                        pos=(1 * VISUAL_OFFSET, 0))
-            question = u'Ktore kolko zniknelo pierwsze?'
+            question = u'Kt\u00F3re k\u00F3\u0142ko znikne\u0142o pierwsze?'
             version = QuestonVersion.FIRST_HIDDEN
 
         else:
@@ -254,8 +254,8 @@ def run_trial(config, version, fix_stim, left_stim, right_stim, soa, win, arrow_
         corr = not corr
 
 	# Rating Scale
-    ratingScale = visual.RatingScale(win, size = 0.8, low = 1, high = 5, noMouse=True, 
-    markerStart = 3, stretch= 1.4, scale="1=zgadywalem, 5=jestem pewny", acceptPreText= 'Wybierz')
+    ratingScale = visual.RatingScale(win, size = 0.8, noMouse=True, 
+    markerStart = 2, stretch= 1.4, scale="Okre\u015bl swoj\u0105 pewno\u015b\u0107 co do udzielonej odpowiedzi", acceptPreText= 'Wybierz',choices=["\u017badna", "Ma\u0142a", "Du\u017ca", "Ca\u0142kowita"])
     while ratingScale.noResponse:
         ratingScale.draw()
         win.flip()

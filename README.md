@@ -1,6 +1,6 @@
 # Temportal Order Judgement Task
 
-[![Demo Video](https://img.youtube.com/vi/WhIQjH3qzag/0.jpg)](https://www.youtube.com/watch?v=WhIQjH3qzag)
+[![Demo Video](https://img.youtube.com/vi/SiQmsmaYkRk/0.jpg)](https://www.youtube.com/watch?v=SiQmsmaYkRk)
 
 # Procedure scheme
 
@@ -37,7 +37,7 @@
 - [ ] EEG Integtarion
 - [ ] Eye Tracker Integration
 - [ ] Timing Precision tests
-- [ ] Rating scale details
+- [x] Rating scale details
 - [ ] "Octagon" presentation time
 - [ ] Config params selection
-- [ ] Shape of stimulus (full or just edges?) 
+- [x] Shape of stimulus (full or just edges?) 

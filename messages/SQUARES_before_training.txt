@@ -4,9 +4,6 @@ będzie pojawiać się na ekranie nieco wcześniej niż drugi.
 
 Twoim zadaniem jest wskazać, który z kwadratów pojawił się na ekranie jako PIERWSZY (czyli WCZEŚNIEJ od drugiego).
 
-Na początku zadanie to będzie proste, w dalszej części zadania zrobi się znacznie trudniejsze.
-
-
 UWAGA! Łatwo się pomylić i wykonywać zadanie na odwrót, upewnij się, że rozumiesz, ZAPAMIĘTAJ:
 
 Naciśnij lewą strzałkę jeśli to po lewej stronie pojawił się PIERWSZY kwadrat
@@ -15,5 +12,8 @@ lub prawą strzałkę jeśli to po prawej stronie wyświetlił się PIERWSZY kwa
 Szybkość odpowiedzi nie ma znaczenia,
 ale masz maksymalnie 4 sekundy na udzielenie odpowiedzi,
 tak więc nie możesz zwlekać zbyt długo.
+
+Na końcu zostaniesz zapytany, na ile jesteś pewny udzielonej odpowiedzi, 
+wyboru dokonaj strzałkami i potwierdź go naciskając enter.
 
 Nacisnij SPACJĘ by przejść do treningu

@@ -5,10 +5,9 @@ Pamiętaj, Twoim zadaniem jest wskazać, która z figur POJAWIŁA się PIERWSZA.
 Naciśnij lewą strzałkę, jeśli to po lewej stronie pojawiła się pierwsza figura,
 lub prawą strzałkę, jeśli to po prawej stronie pojawiła się pierwsza figura.
 
-
 Moze byc tak, ze nie bedziesz mogl/a rozroznic kolejnosci,
 wtedy decyduj tak jak Ci sie wydaje.
 
-Zadanie będzie robić się coraz trudniejsze, więc skoncentruj się.
+Liczy się poprawność, więc się skoncentruj.
 
 Nacisnij SPACJĘ by rozpocząć.
