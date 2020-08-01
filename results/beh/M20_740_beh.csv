@@ -1,0 +1,4 @@
+PART_ID,Trial,Stimuli,Version,Training,FIXTIME,TIME,Correct,SOA,Reversal,Reversal_count,Latency,stim_name,Rating
+M20,0,SQUARES,First_showed,1,120,15,0,3,0,0,3.0888681411743164,right,Duża
+M20,1,SQUARES,First_showed,1,120,15,0,4,0,-,3.246891975402832,left,Duża
+M20,2,SQUARES,First_showed,1,120,15,1,5,0,-,3.0336368083953857,right,Duża
