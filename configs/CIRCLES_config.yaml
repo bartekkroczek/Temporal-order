@@ -3,12 +3,12 @@ Training: [{'soa': 15, 'reps':2}, {'soa': 8, 'reps':2}, {'soa': 6, 'reps':3}]
 # List describing training.
 # In example above it will be four levels of training (because of 4 items in list, may be less, may be more)
 # First training block contains 6 trials, (reps = 6) of soa equal to 30 etc...
-NO_TRIALS: 4
+NO_TRIALS: 20
 START_SOA: 3
-FIXTIME: 120 # Fixation cross time
-DELAY: 4
+FIXTIME: 360 # Fixation cross time
+DELAY: 1
 TIME: 15 #  presentation time
 RTIME: 240 # Maximal response time
-MAX_REVS: 2 # No of reversals in adaptive alg.
-STEP_UP: 1
+MAX_REVS: 8 # No of reversals in adaptive alg.
+STEP_UP: 3
 STEP_DOWN: 1
