@@ -1,0 +1,739 @@
+5.7504 	INFO 	FRAME RATE: 60
+5.7504 	INFO 	SCREEN RES: [1920, 1080]
+5.8157 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+5.8199 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+5.8261 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+5.8281 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+5.8295 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+5.8585 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+5.8665 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+5.8821 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+5.9397 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+14.1848 	DATA 	Keypress: space
+14.2072 	EXP 	window1: mouseVisible = True
+2.8699 	INFO 	FRAME RATE: 60
+2.8699 	INFO 	SCREEN RES: [1920, 1080]
+2.9321 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+2.9363 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+2.9424 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+2.9444 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+2.9458 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+2.9748 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+2.9827 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+2.9988 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+3.0602 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+4.0734 	DATA 	Keypress: space
+5.4342 	DATA 	Keypress: right
+5.4369 	EXP 	window1: mouseVisible = False
+5.4801 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+5.5007 	EXP 	unnamed RatingScale: flipVert = False
+5.5007 	EXP 	unnamed RatingScale: autoLog = True
+6.4104 	DATA 	Keypress: return
+6.4105 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+6.4106 	DATA 	RatingScale unnamed RatingScale: rating RT=0.930
+6.4106 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.93)]
+10.4676 	DATA 	Keypress: left
+10.4679 	EXP 	window1: mouseVisible = False
+10.5104 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+10.5340 	EXP 	unnamed RatingScale: flipVert = False
+10.5340 	EXP 	unnamed RatingScale: autoLog = True
+10.9577 	DATA 	Keypress: return
+10.9578 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+10.9578 	DATA 	RatingScale unnamed RatingScale: rating RT=0.447
+10.9578 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.447)]
+14.1341 	DATA 	Keypress: right
+14.1345 	EXP 	window1: mouseVisible = False
+14.1779 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+14.2006 	EXP 	unnamed RatingScale: flipVert = False
+14.2006 	EXP 	unnamed RatingScale: autoLog = True
+14.6289 	DATA 	Keypress: return
+14.6290 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+14.6290 	DATA 	RatingScale unnamed RatingScale: rating RT=0.451
+14.6290 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.451)]
+17.8341 	DATA 	Keypress: left
+17.8344 	EXP 	window1: mouseVisible = False
+17.8772 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+17.9006 	EXP 	unnamed RatingScale: flipVert = False
+17.9006 	EXP 	unnamed RatingScale: autoLog = True
+18.2290 	DATA 	Keypress: return
+18.6448 	DATA 	Keypress: return
+18.6449 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+18.6449 	DATA 	RatingScale unnamed RatingScale: rating RT=0.768
+18.6450 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.768)]
+21.9175 	DATA 	Keypress: right
+21.9179 	EXP 	window1: mouseVisible = False
+21.9739 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+22.0006 	EXP 	unnamed RatingScale: flipVert = False
+22.0006 	EXP 	unnamed RatingScale: autoLog = True
+22.3616 	DATA 	Keypress: return
+22.6922 	DATA 	Keypress: return
+22.6923 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+22.6923 	DATA 	RatingScale unnamed RatingScale: rating RT=0.718
+22.6924 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.718)]
+26.0341 	DATA 	Keypress: right
+26.0345 	EXP 	window1: mouseVisible = False
+26.0751 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+26.1006 	EXP 	unnamed RatingScale: flipVert = False
+26.1006 	EXP 	unnamed RatingScale: autoLog = True
+26.4275 	DATA 	Keypress: return
+26.7613 	DATA 	Keypress: return
+26.7613 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+26.7614 	DATA 	RatingScale unnamed RatingScale: rating RT=0.686
+26.7614 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.686)]
+30.3174 	DATA 	Keypress: left
+30.3178 	EXP 	window1: mouseVisible = False
+30.3663 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+30.3859 	EXP 	unnamed RatingScale: flipVert = False
+30.3859 	EXP 	unnamed RatingScale: autoLog = True
+30.7767 	DATA 	Keypress: return
+30.7768 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+30.7768 	DATA 	RatingScale unnamed RatingScale: rating RT=0.410
+30.7768 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.41)]
+32.8755 	EXP 	window1: mouseVisible = True
+3.0213 	INFO 	FRAME RATE: 60
+3.0214 	INFO 	SCREEN RES: [1920, 1080]
+3.0841 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.0883 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.0943 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+3.0963 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.0977 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.1266 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+3.1329 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+3.1488 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+3.2092 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+6.6616 	DATA 	Keypress: space
+7.7023 	DATA 	Keypress: left
+7.7045 	EXP 	window1: mouseVisible = False
+7.7453 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+7.7688 	EXP 	unnamed RatingScale: flipVert = False
+7.7688 	EXP 	unnamed RatingScale: autoLog = True
+8.1972 	DATA 	Keypress: return
+8.1973 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+8.1973 	DATA 	RatingScale unnamed RatingScale: rating RT=0.452
+8.1973 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.452)]
+11.8524 	DATA 	Keypress: left
+11.8527 	EXP 	window1: mouseVisible = False
+11.8952 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+11.9188 	EXP 	unnamed RatingScale: flipVert = False
+11.9188 	EXP 	unnamed RatingScale: autoLog = True
+12.4254 	DATA 	Keypress: return
+12.4255 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+12.4255 	DATA 	RatingScale unnamed RatingScale: rating RT=0.530
+12.4255 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.53)]
+15.2056 	DATA 	Keypress: left
+15.2191 	EXP 	window1: mouseVisible = False
+15.2624 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+15.2855 	EXP 	unnamed RatingScale: flipVert = False
+15.2855 	EXP 	unnamed RatingScale: autoLog = True
+15.7486 	DATA 	Keypress: return
+15.7487 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+15.7487 	DATA 	RatingScale unnamed RatingScale: rating RT=0.486
+15.7487 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.486)]
+18.3357 	DATA 	Keypress: right
+18.3361 	EXP 	window1: mouseVisible = False
+18.3839 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+18.4034 	EXP 	unnamed RatingScale: flipVert = False
+18.4034 	EXP 	unnamed RatingScale: autoLog = True
+18.8280 	DATA 	Keypress: return
+18.8281 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+18.8281 	DATA 	RatingScale unnamed RatingScale: rating RT=0.444
+18.8281 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.444)]
+21.6551 	DATA 	Keypress: right
+21.6691 	EXP 	window1: mouseVisible = False
+21.7097 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+21.7355 	EXP 	unnamed RatingScale: flipVert = False
+21.7355 	EXP 	unnamed RatingScale: autoLog = True
+22.1923 	DATA 	Keypress: return
+22.1924 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+22.1924 	DATA 	RatingScale unnamed RatingScale: rating RT=0.483
+22.1924 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.483)]
+24.8061 	DATA 	Keypress: left
+24.8191 	EXP 	window1: mouseVisible = False
+24.8673 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+24.8863 	EXP 	unnamed RatingScale: flipVert = False
+24.8863 	EXP 	unnamed RatingScale: autoLog = True
+25.3259 	DATA 	Keypress: return
+25.3260 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+25.3260 	DATA 	RatingScale unnamed RatingScale: rating RT=0.459
+25.3261 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.459)]
+28.5856 	DATA 	Keypress: left
+28.5860 	EXP 	window1: mouseVisible = False
+28.6296 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+28.6521 	EXP 	unnamed RatingScale: flipVert = False
+28.6521 	EXP 	unnamed RatingScale: autoLog = True
+29.0094 	DATA 	Keypress: return
+29.4345 	DATA 	Keypress: return
+29.4346 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+29.4347 	DATA 	RatingScale unnamed RatingScale: rating RT=0.805
+29.4347 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.805)]
+32.8554 	DATA 	Keypress: left
+32.8691 	EXP 	window1: mouseVisible = False
+32.9187 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+32.9383 	EXP 	unnamed RatingScale: flipVert = False
+32.9383 	EXP 	unnamed RatingScale: autoLog = True
+33.3084 	DATA 	Keypress: return
+33.6612 	DATA 	Keypress: return
+33.6613 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+33.6613 	DATA 	RatingScale unnamed RatingScale: rating RT=0.743
+33.6613 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.743)]
+36.3022 	DATA 	Keypress: right
+36.3027 	EXP 	window1: mouseVisible = False
+36.3548 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+36.3846 	EXP 	unnamed RatingScale: flipVert = False
+36.3846 	EXP 	unnamed RatingScale: autoLog = True
+36.8132 	DATA 	Keypress: return
+36.8133 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+36.8133 	DATA 	RatingScale unnamed RatingScale: rating RT=0.458
+36.8134 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.458)]
+39.1435 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+42.1012 	DATA 	Keypress: space
+51.1355 	DATA 	Keypress: left
+51.1359 	EXP 	window1: mouseVisible = False
+51.1868 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+51.2059 	EXP 	unnamed RatingScale: flipVert = False
+51.2059 	EXP 	unnamed RatingScale: autoLog = True
+51.6611 	DATA 	Keypress: return
+51.6612 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+51.6612 	DATA 	RatingScale unnamed RatingScale: rating RT=0.474
+51.6612 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.474)]
+62.4714 	DATA 	Keypress: left
+62.4856 	EXP 	window1: mouseVisible = False
+62.5286 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+62.5519 	EXP 	unnamed RatingScale: flipVert = False
+62.5519 	EXP 	unnamed RatingScale: autoLog = True
+63.0272 	DATA 	Keypress: return
+63.0273 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+63.0273 	DATA 	RatingScale unnamed RatingScale: rating RT=0.499
+63.0274 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.499)]
+64.4197 	DATA 	Keypress: f7
+64.6353 	CRITICAL 	Experiment finished by user! f7 pressed.
+64.6459 	EXP 	window1: mouseVisible = True
+5.6922 	INFO 	FRAME RATE: 60
+5.6922 	INFO 	SCREEN RES: [1920, 1080]
+5.7552 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+5.7594 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+5.7702 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+5.7732 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+5.7746 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+5.8039 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+5.8105 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+5.8269 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+5.8891 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+6.9162 	DATA 	Keypress: space
+8.4564 	DATA 	Keypress: left
+8.4978 	EXP 	window1: mouseVisible = False
+8.5354 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+8.5562 	EXP 	unnamed RatingScale: flipVert = False
+8.5562 	EXP 	unnamed RatingScale: autoLog = True
+10.6811 	DATA 	Keypress: return
+10.6812 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+10.6813 	DATA 	RatingScale unnamed RatingScale: rating RT=2.146
+10.6813 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 2.146)]
+15.1431 	DATA 	Keypress: right
+15.1965 	EXP 	window1: mouseVisible = False
+15.2336 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+15.2562 	EXP 	unnamed RatingScale: flipVert = False
+15.2562 	EXP 	unnamed RatingScale: autoLog = True
+16.3983 	DATA 	Keypress: return
+16.3984 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+16.3984 	DATA 	RatingScale unnamed RatingScale: rating RT=1.165
+16.3984 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 1.165)]
+19.3230 	DATA 	Keypress: left
+19.3633 	EXP 	window1: mouseVisible = False
+19.4031 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+19.4228 	EXP 	unnamed RatingScale: flipVert = False
+19.4228 	EXP 	unnamed RatingScale: autoLog = True
+19.8639 	DATA 	Keypress: return
+19.8640 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+19.8640 	DATA 	RatingScale unnamed RatingScale: rating RT=0.461
+19.8640 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.461)]
+23.4062 	DATA 	Keypress: right
+23.4466 	EXP 	window1: mouseVisible = False
+23.4856 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+23.5061 	EXP 	unnamed RatingScale: flipVert = False
+23.5061 	EXP 	unnamed RatingScale: autoLog = True
+23.9131 	DATA 	Keypress: return
+23.9132 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+23.9132 	DATA 	RatingScale unnamed RatingScale: rating RT=0.428
+23.9132 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.428)]
+27.2562 	DATA 	Keypress: left
+27.2966 	EXP 	window1: mouseVisible = False
+27.3353 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+27.3561 	EXP 	unnamed RatingScale: flipVert = False
+27.3561 	EXP 	unnamed RatingScale: autoLog = True
+27.7672 	DATA 	Keypress: return
+27.7673 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+27.7673 	DATA 	RatingScale unnamed RatingScale: rating RT=0.432
+27.7674 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.432)]
+30.4229 	DATA 	Keypress: right
+30.4633 	EXP 	window1: mouseVisible = False
+30.5036 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+30.5227 	EXP 	unnamed RatingScale: flipVert = False
+30.5227 	EXP 	unnamed RatingScale: autoLog = True
+30.9525 	DATA 	Keypress: return
+30.9526 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+30.9526 	DATA 	RatingScale unnamed RatingScale: rating RT=0.449
+30.9526 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.449)]
+33.8062 	DATA 	Keypress: right
+33.8465 	EXP 	window1: mouseVisible = False
+33.8862 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+33.9061 	EXP 	unnamed RatingScale: flipVert = False
+33.9061 	EXP 	unnamed RatingScale: autoLog = True
+34.3500 	DATA 	Keypress: return
+34.3501 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+34.3502 	DATA 	RatingScale unnamed RatingScale: rating RT=0.464
+34.3502 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.464)]
+37.3896 	DATA 	Keypress: right
+37.4299 	EXP 	window1: mouseVisible = False
+37.4751 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+37.5053 	EXP 	unnamed RatingScale: flipVert = False
+37.5053 	EXP 	unnamed RatingScale: autoLog = True
+37.8144 	DATA 	Keypress: return
+38.3487 	DATA 	Keypress: return
+38.3488 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+38.3488 	DATA 	RatingScale unnamed RatingScale: rating RT=0.874
+38.3488 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.874)]
+41.8228 	DATA 	Keypress: right
+41.8632 	EXP 	window1: mouseVisible = False
+41.9002 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+41.9227 	EXP 	unnamed RatingScale: flipVert = False
+41.9227 	EXP 	unnamed RatingScale: autoLog = True
+42.4341 	DATA 	Keypress: return
+42.4342 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+42.4342 	DATA 	RatingScale unnamed RatingScale: rating RT=0.534
+42.4342 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.534)]
+45.8229 	DATA 	Keypress: right
+45.8632 	EXP 	window1: mouseVisible = False
+45.9025 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+45.9227 	EXP 	unnamed RatingScale: flipVert = False
+45.9227 	EXP 	unnamed RatingScale: autoLog = True
+46.3315 	DATA 	Keypress: return
+46.3316 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+46.3316 	DATA 	RatingScale unnamed RatingScale: rating RT=0.429
+46.3316 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.429)]
+48.2456 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+50.1159 	DATA 	Keypress: space
+58.8394 	DATA 	Keypress: right
+58.8798 	EXP 	window1: mouseVisible = False
+58.9176 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+58.9393 	EXP 	unnamed RatingScale: flipVert = False
+58.9393 	EXP 	unnamed RatingScale: autoLog = True
+59.4814 	DATA 	Keypress: return
+59.4815 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+59.4815 	DATA 	RatingScale unnamed RatingScale: rating RT=0.564
+59.4815 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.564)]
+70.1560 	DATA 	Keypress: right
+70.1963 	EXP 	window1: mouseVisible = False
+70.2346 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+70.2559 	EXP 	unnamed RatingScale: flipVert = False
+70.2559 	EXP 	unnamed RatingScale: autoLog = True
+71.1325 	DATA 	Keypress: return
+71.1326 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+71.1326 	DATA 	RatingScale unnamed RatingScale: rating RT=0.898
+71.1326 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.898)]
+81.2393 	DATA 	Keypress: right
+81.2796 	EXP 	window1: mouseVisible = False
+81.3174 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+81.3391 	EXP 	unnamed RatingScale: flipVert = False
+81.3391 	EXP 	unnamed RatingScale: autoLog = True
+82.3503 	DATA 	Keypress: return
+82.3504 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+82.3504 	DATA 	RatingScale unnamed RatingScale: rating RT=1.033
+82.3504 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 1.033)]
+89.1060 	DATA 	Keypress: f7
+89.1061 	CRITICAL 	Experiment finished by user! f7 pressed.
+89.1160 	EXP 	window1: mouseVisible = True
+3.3348 	INFO 	FRAME RATE: 60
+3.3349 	INFO 	SCREEN RES: [1920, 1080]
+3.3983 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.4025 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.4088 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+3.4108 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.4122 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.4410 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+3.4474 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+3.4640 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+3.5248 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+5.3640 	DATA 	Keypress: space
+6.6323 	DATA 	Keypress: left
+6.6738 	EXP 	window1: mouseVisible = False
+6.7173 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+6.7322 	EXP 	unnamed RatingScale: flipVert = False
+6.7322 	EXP 	unnamed RatingScale: autoLog = True
+7.1091 	DATA 	Keypress: return
+7.5747 	DATA 	Keypress: return
+7.5748 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+7.5748 	DATA 	RatingScale unnamed RatingScale: rating RT=0.857
+7.5748 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.857)]
+10.3157 	DATA 	Keypress: left
+10.3561 	EXP 	window1: mouseVisible = False
+10.3936 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+10.4155 	EXP 	unnamed RatingScale: flipVert = False
+10.4155 	EXP 	unnamed RatingScale: autoLog = True
+10.7814 	DATA 	Keypress: return
+11.2908 	DATA 	Keypress: return
+11.2909 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+11.2909 	DATA 	RatingScale unnamed RatingScale: rating RT=0.897
+11.2909 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.897)]
+14.6156 	DATA 	Keypress: left
+14.6560 	EXP 	window1: mouseVisible = False
+14.6949 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+14.7155 	EXP 	unnamed RatingScale: flipVert = False
+14.7155 	EXP 	unnamed RatingScale: autoLog = True
+15.1434 	DATA 	Keypress: return
+15.1435 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+15.1435 	DATA 	RatingScale unnamed RatingScale: rating RT=0.449
+15.1435 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.449)]
+19.0489 	DATA 	Keypress: right
+19.0893 	EXP 	window1: mouseVisible = False
+19.1280 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+19.1488 	EXP 	unnamed RatingScale: flipVert = False
+19.1488 	EXP 	unnamed RatingScale: autoLog = True
+19.5420 	DATA 	Keypress: return
+19.5421 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+19.5421 	DATA 	RatingScale unnamed RatingScale: rating RT=0.414
+19.5422 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.414)]
+22.6156 	DATA 	Keypress: left
+22.6560 	EXP 	window1: mouseVisible = False
+22.6953 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+22.7154 	EXP 	unnamed RatingScale: flipVert = False
+22.7154 	EXP 	unnamed RatingScale: autoLog = True
+23.0779 	DATA 	Keypress: return
+23.4731 	DATA 	Keypress: return
+23.4732 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+23.4732 	DATA 	RatingScale unnamed RatingScale: rating RT=0.778
+23.4733 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.778)]
+26.3156 	DATA 	Keypress: left
+26.3559 	EXP 	window1: mouseVisible = False
+26.3950 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+26.4154 	EXP 	unnamed RatingScale: flipVert = False
+26.4154 	EXP 	unnamed RatingScale: autoLog = True
+26.9224 	DATA 	Keypress: return
+26.9225 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+26.9225 	DATA 	RatingScale unnamed RatingScale: rating RT=0.527
+26.9225 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.527)]
+30.4517 	DATA 	Keypress: right
+30.5057 	EXP 	window1: mouseVisible = False
+30.5435 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+30.5654 	EXP 	unnamed RatingScale: flipVert = False
+30.5654 	EXP 	unnamed RatingScale: autoLog = True
+31.0259 	DATA 	Keypress: return
+31.0260 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+31.0260 	DATA 	RatingScale unnamed RatingScale: rating RT=0.482
+31.0260 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.482)]
+34.4155 	DATA 	Keypress: left
+34.4559 	EXP 	window1: mouseVisible = False
+34.4945 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+34.5154 	EXP 	unnamed RatingScale: flipVert = False
+34.5154 	EXP 	unnamed RatingScale: autoLog = True
+34.9430 	DATA 	Keypress: return
+34.9431 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+34.9431 	DATA 	RatingScale unnamed RatingScale: rating RT=0.449
+34.9431 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.449)]
+37.2413 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+38.5156 	DATA 	Keypress: space
+47.2526 	DATA 	Keypress: right
+47.3056 	EXP 	window1: mouseVisible = False
+47.3439 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+47.3653 	EXP 	unnamed RatingScale: flipVert = False
+47.3653 	EXP 	unnamed RatingScale: autoLog = True
+47.8558 	DATA 	Keypress: return
+47.8559 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+47.8560 	DATA 	RatingScale unnamed RatingScale: rating RT=0.512
+47.8560 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.512)]
+58.8517 	DATA 	Keypress: left
+58.9056 	EXP 	window1: mouseVisible = False
+58.9444 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+58.9652 	EXP 	unnamed RatingScale: flipVert = False
+58.9652 	EXP 	unnamed RatingScale: autoLog = True
+60.6758 	DATA 	Keypress: return
+60.6759 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+60.6760 	DATA 	RatingScale unnamed RatingScale: rating RT=1.732
+60.6760 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 1.732)]
+61.7528 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Circle', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...))
+61.7555 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Circle', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...))
+61.7792 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+61.7844 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+61.7932 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Które kółko znikneło pierwsze?', units='pix', win=Window(...), wrapWidth=500)
+61.8482 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+63.0276 	DATA 	Keypress: space
+64.3153 	DATA 	Keypress: right
+64.3556 	EXP 	window1: mouseVisible = False
+64.3863 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+64.4151 	EXP 	unnamed RatingScale: flipVert = False
+64.4151 	EXP 	unnamed RatingScale: autoLog = True
+64.7725 	DATA 	Keypress: return
+65.1904 	DATA 	Keypress: return
+65.1905 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+65.1905 	DATA 	RatingScale unnamed RatingScale: rating RT=0.804
+65.1905 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.804)]
+67.9154 	DATA 	Keypress: left
+67.9557 	EXP 	window1: mouseVisible = False
+67.9926 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+68.0151 	EXP 	unnamed RatingScale: flipVert = False
+68.0151 	EXP 	unnamed RatingScale: autoLog = True
+68.3557 	DATA 	Keypress: return
+68.7745 	DATA 	Keypress: return
+68.7746 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+68.7746 	DATA 	RatingScale unnamed RatingScale: rating RT=0.782
+68.7747 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.782)]
+71.9153 	DATA 	Keypress: right
+71.9556 	EXP 	window1: mouseVisible = False
+71.9916 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+72.0151 	EXP 	unnamed RatingScale: flipVert = False
+72.0151 	EXP 	unnamed RatingScale: autoLog = True
+72.3419 	DATA 	Keypress: return
+72.6748 	DATA 	Keypress: return
+72.6749 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+72.6749 	DATA 	RatingScale unnamed RatingScale: rating RT=0.683
+72.6749 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.683)]
+76.1486 	DATA 	Keypress: right
+76.1890 	EXP 	window1: mouseVisible = False
+76.2248 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+76.2484 	EXP 	unnamed RatingScale: flipVert = False
+76.2484 	EXP 	unnamed RatingScale: autoLog = True
+76.7101 	DATA 	Keypress: return
+76.7102 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+76.7102 	DATA 	RatingScale unnamed RatingScale: rating RT=0.485
+76.7102 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.485)]
+80.1486 	DATA 	Keypress: right
+80.1890 	EXP 	window1: mouseVisible = False
+80.2249 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+80.2484 	EXP 	unnamed RatingScale: flipVert = False
+80.2484 	EXP 	unnamed RatingScale: autoLog = True
+80.6928 	DATA 	Keypress: return
+80.6929 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+80.6929 	DATA 	RatingScale unnamed RatingScale: rating RT=0.468
+80.6929 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.468)]
+84.1486 	DATA 	Keypress: down
+84.5193 	DATA 	Keypress: right
+84.5720 	EXP 	window1: mouseVisible = False
+84.6089 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+84.6317 	EXP 	unnamed RatingScale: flipVert = False
+84.6317 	EXP 	unnamed RatingScale: autoLog = True
+84.9895 	DATA 	Keypress: return
+85.3928 	DATA 	Keypress: return
+85.3929 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+85.3929 	DATA 	RatingScale unnamed RatingScale: rating RT=0.784
+85.3929 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.784)]
+87.5467 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+90.0034 	DATA 	Keypress: space
+100.9189 	DATA 	Keypress: right
+100.9720 	EXP 	window1: mouseVisible = False
+101.0071 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+101.0316 	EXP 	unnamed RatingScale: flipVert = False
+101.0316 	EXP 	unnamed RatingScale: autoLog = True
+101.7219 	DATA 	Keypress: return
+101.7220 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+101.7220 	DATA 	RatingScale unnamed RatingScale: rating RT=0.715
+101.7220 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.715)]
+112.4651 	DATA 	Keypress: right
+112.5055 	EXP 	window1: mouseVisible = False
+112.5444 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+112.5649 	EXP 	unnamed RatingScale: flipVert = False
+112.5649 	EXP 	unnamed RatingScale: autoLog = True
+115.8908 	DATA 	Keypress: return
+115.8909 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+115.8909 	DATA 	RatingScale unnamed RatingScale: rating RT=3.346
+115.8909 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 3.346)]
+117.0455 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+120.2113 	DATA 	Keypress: space
+120.2365 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=60, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+120.2950 	EXP 	window1: mouseVisible = True
+3.3184 	INFO 	FRAME RATE: 60
+3.3184 	INFO 	SCREEN RES: [1920, 1080]
+3.3811 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Poprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.3853 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Niepoprawna odpowiedź', units='pix', win=Window(...), wrapWidth=500)
+3.3916 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Nie udzieliłeś odpowiedzi', units='pix', win=Window(...), wrapWidth=500)
+3.3936 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.3950 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([80., 80.]), units='pix', vertices=ndarray(...), win=Window(...))
+3.4239 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+3.4302 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+3.4463 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Który kwadrat pojawił się pierwszy?', units='pix', win=Window(...), wrapWidth=500)
+3.5034 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+4.1823 	DATA 	Keypress: space
+5.5993 	DATA 	Keypress: right
+5.6408 	EXP 	window1: mouseVisible = False
+5.6798 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+5.6992 	EXP 	unnamed RatingScale: flipVert = False
+5.6992 	EXP 	unnamed RatingScale: autoLog = True
+6.0744 	DATA 	Keypress: return
+6.5067 	DATA 	Keypress: return
+6.5068 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+6.5068 	DATA 	RatingScale unnamed RatingScale: rating RT=0.827
+6.5068 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.827)]
+9.4828 	DATA 	Keypress: left
+9.5231 	EXP 	window1: mouseVisible = False
+9.5610 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+9.5825 	EXP 	unnamed RatingScale: flipVert = False
+9.5825 	EXP 	unnamed RatingScale: autoLog = True
+9.9584 	DATA 	Keypress: return
+10.3931 	DATA 	Keypress: return
+10.3932 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+10.3932 	DATA 	RatingScale unnamed RatingScale: rating RT=0.832
+10.3932 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.832)]
+13.5494 	DATA 	Keypress: left
+13.5897 	EXP 	window1: mouseVisible = False
+13.6286 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+13.6491 	EXP 	unnamed RatingScale: flipVert = False
+13.6491 	EXP 	unnamed RatingScale: autoLog = True
+14.0092 	DATA 	Keypress: return
+14.5095 	DATA 	Keypress: return
+14.5096 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+14.5096 	DATA 	RatingScale unnamed RatingScale: rating RT=0.881
+14.5096 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.881)]
+17.6159 	DATA 	Keypress: left
+17.6562 	EXP 	window1: mouseVisible = False
+17.6938 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+17.7158 	EXP 	unnamed RatingScale: flipVert = False
+17.7158 	EXP 	unnamed RatingScale: autoLog = True
+18.1396 	DATA 	Keypress: return
+18.1397 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+18.1397 	DATA 	RatingScale unnamed RatingScale: rating RT=0.446
+18.1398 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.446)]
+21.0993 	DATA 	Keypress: left
+21.1397 	EXP 	window1: mouseVisible = False
+21.1781 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+21.1991 	EXP 	unnamed RatingScale: flipVert = False
+21.1991 	EXP 	unnamed RatingScale: autoLog = True
+21.5897 	DATA 	Keypress: return
+21.5898 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+21.5898 	DATA 	RatingScale unnamed RatingScale: rating RT=0.412
+21.5898 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.412)]
+24.3493 	DATA 	Keypress: right
+24.3896 	EXP 	window1: mouseVisible = False
+24.4288 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+24.4491 	EXP 	unnamed RatingScale: flipVert = False
+24.4491 	EXP 	unnamed RatingScale: autoLog = True
+24.9778 	DATA 	Keypress: return
+24.9779 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+24.9779 	DATA 	RatingScale unnamed RatingScale: rating RT=0.549
+24.9779 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.549)]
+28.2826 	DATA 	Keypress: right
+28.3229 	EXP 	window1: mouseVisible = False
+28.3610 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+28.3824 	EXP 	unnamed RatingScale: flipVert = False
+28.3824 	EXP 	unnamed RatingScale: autoLog = True
+28.7746 	DATA 	Keypress: return
+28.7747 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+28.7747 	DATA 	RatingScale unnamed RatingScale: rating RT=0.414
+28.7747 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.414)]
+32.0159 	DATA 	Keypress: left
+32.0563 	EXP 	window1: mouseVisible = False
+32.0936 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+32.1157 	EXP 	unnamed RatingScale: flipVert = False
+32.1157 	EXP 	unnamed RatingScale: autoLog = True
+32.6101 	DATA 	Keypress: return
+32.6102 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+32.6102 	DATA 	RatingScale unnamed RatingScale: rating RT=0.517
+32.6103 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.517)]
+36.1189 	DATA 	Keypress: right
+36.1727 	EXP 	window1: mouseVisible = False
+36.2110 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+36.2323 	EXP 	unnamed RatingScale: flipVert = False
+36.2323 	EXP 	unnamed RatingScale: autoLog = True
+36.5427 	DATA 	Keypress: return
+36.9231 	DATA 	Keypress: return
+36.9232 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+36.9233 	DATA 	RatingScale unnamed RatingScale: rating RT=0.712
+36.9233 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.712)]
+39.2417 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+39.7819 	DATA 	Keypress: return
+49.3023 	DATA 	Keypress: right
+49.3560 	EXP 	window1: mouseVisible = False
+49.3935 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+49.4156 	EXP 	unnamed RatingScale: flipVert = False
+49.4156 	EXP 	unnamed RatingScale: autoLog = True
+51.0093 	DATA 	Keypress: return
+51.0094 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+51.0094 	DATA 	RatingScale unnamed RatingScale: rating RT=1.616
+51.0094 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 1.616)]
+61.0325 	DATA 	Keypress: right
+61.0728 	EXP 	window1: mouseVisible = False
+61.1167 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+61.1363 	EXP 	unnamed RatingScale: flipVert = False
+61.1363 	EXP 	unnamed RatingScale: autoLog = True
+61.5742 	DATA 	Keypress: return
+61.5743 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+61.5744 	DATA 	RatingScale unnamed RatingScale: rating RT=0.458
+61.5744 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.458)]
+63.5081 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Circle', opacity=1, ori=0.0, pos=array([-60.,   0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...))
+63.5108 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0.89803922, 0.89803922, 0.89803922]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([0.89803922, 0.89803922, 0.89803922]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.5, name='unnamed Circle', opacity=1, ori=0.0, pos=array([60.,  0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...))
+63.5342 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='./stims/PRE_STIMULI.bmp', interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([960, 720]), texRes=128, units='pix', win=Window(...))
+63.5395 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -200.]), rgb=UNKNOWN, text='←       →', units='pix', win=Window(...), wrapWidth=500)
+63.5482 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=20, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([   0., -180.]), rgb=UNKNOWN, text='Które kółko znikneło pierwsze?', units='pix', win=Window(...), wrapWidth=500)
+63.6064 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+65.0778 	DATA 	Keypress: space
+66.1186 	DATA 	Keypress: right
+66.1726 	EXP 	window1: mouseVisible = False
+66.2047 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+66.2322 	EXP 	unnamed RatingScale: flipVert = False
+66.2322 	EXP 	unnamed RatingScale: autoLog = True
+66.5579 	DATA 	Keypress: return
+66.9401 	DATA 	Keypress: return
+66.9402 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+66.9402 	DATA 	RatingScale unnamed RatingScale: rating RT=0.736
+66.9403 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.735)]
+70.4490 	DATA 	Keypress: right
+70.4893 	EXP 	window1: mouseVisible = False
+70.5268 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+70.5488 	EXP 	unnamed RatingScale: flipVert = False
+70.5488 	EXP 	unnamed RatingScale: autoLog = True
+70.9577 	DATA 	Keypress: return
+70.9578 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+70.9579 	DATA 	RatingScale unnamed RatingScale: rating RT=0.431
+70.9579 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.431)]
+74.4823 	DATA 	Keypress: left
+74.5227 	EXP 	window1: mouseVisible = False
+74.5578 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+74.5821 	EXP 	unnamed RatingScale: flipVert = False
+74.5821 	EXP 	unnamed RatingScale: autoLog = True
+74.9398 	DATA 	Keypress: return
+75.3576 	DATA 	Keypress: return
+75.3577 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+75.3577 	DATA 	RatingScale unnamed RatingScale: rating RT=0.800
+75.3578 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.8)]
+79.0990 	DATA 	Keypress: right
+79.1393 	EXP 	window1: mouseVisible = False
+79.1772 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+79.1988 	EXP 	unnamed RatingScale: flipVert = False
+79.1988 	EXP 	unnamed RatingScale: autoLog = True
+79.7575 	DATA 	Keypress: return
+79.7576 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+79.7576 	DATA 	RatingScale unnamed RatingScale: rating RT=0.580
+79.7576 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.58)]
+82.9822 	DATA 	Keypress: right
+83.0226 	EXP 	window1: mouseVisible = False
+83.0576 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+83.0821 	EXP 	unnamed RatingScale: flipVert = False
+83.0821 	EXP 	unnamed RatingScale: autoLog = True
+83.5261 	DATA 	Keypress: return
+83.5262 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+83.5262 	DATA 	RatingScale unnamed RatingScale: rating RT=0.469
+83.5263 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.469)]
+85.3347 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+87.8616 	DATA 	Keypress: space
+97.1323 	DATA 	Keypress: right
+97.1726 	EXP 	window1: mouseVisible = False
+97.2084 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+97.2320 	EXP 	unnamed RatingScale: flipVert = False
+97.2320 	EXP 	unnamed RatingScale: autoLog = True
+97.9061 	DATA 	Keypress: return
+97.9062 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+97.9062 	DATA 	RatingScale unnamed RatingScale: rating RT=0.698
+97.9062 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.698)]
+108.6988 	DATA 	Keypress: right
+108.7391 	EXP 	window1: mouseVisible = False
+108.7780 	EXP 	Created unnamed RatingScale = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['Żadna', 'Mała', 'Duża', 'Całkowita'], colorSpace=UNKNOWN, depth=0, disappear=False, flipVert=False, high=3, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=2.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='unnamed RatingScale', noMouse=True, pos=[0.0, -0.4], precision=1, respKeys=['0', '1', '2', '3'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.48, skipKeys=['tab'], stretch=1.4, textColor='LightGray', textFont='Helvetica Bold', textSize=0.096, tickHeight=1.0, tickMarks=3.0, win=Window(...))
+108.7986 	EXP 	unnamed RatingScale: flipVert = False
+108.7986 	EXP 	unnamed RatingScale: autoLog = True
+109.2572 	DATA 	Keypress: return
+109.2573 	DATA 	RatingScale unnamed RatingScale: (key response) rating=Duża
+109.2573 	DATA 	RatingScale unnamed RatingScale: rating RT=0.479
+109.2573 	DATA 	RatingScale unnamed RatingScale: history=[('Duża', 0.0), ('Duża', 0.479)]
+110.4344 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+112.6456 	DATA 	Keypress: space
+112.6709 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=60, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+122.8071 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.89803922, 0.89803922, 0.89803922]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=30, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+124.4376 	DATA 	Keypress: space
+124.4573 	EXP 	window1: mouseVisible = True

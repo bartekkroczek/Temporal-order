@@ -1,0 +1,14 @@
+PART_ID,Trial,Stimuli,Version,Training,FIXTIME,TIME,Correct,SOA,Reversal,Reversal_count,Latency,stim_name,Rating
+M20,0,SQUARES,First_showed,1,20,15,1,3,0,0,0.8169469833374023,left,Duża
+M20,1,SQUARES,First_showed,1,20,15,1,3,0,-,1.2834179401397705,right,Duża
+M20,2,SQUARES,First_showed,1,20,15,1,3,0,-,0.3668990135192871,left,Duża
+M20,3,SQUARES,First_showed,1,20,15,1,2,0,-,0.9001688957214355,right,Duża
+M20,4,SQUARES,First_showed,1,20,15,1,2,0,-,0.3835899829864502,left,Duża
+M20,5,SQUARES,First_showed,1,20,15,0,2,1,1,0.350269079208374,left,Duża
+M20,6,SQUARES,First_showed,1,20,15,0,3,0,-,0.6002089977264404,left,Duża
+M20,7,SQUARES,First_showed,1,20,15,1,4,0,-,0.36693382263183594,right,Duża
+M20,8,SQUARES,First_showed,1,20,15,1,4,0,-,0.36692118644714355,right,Duża
+M20,9,SQUARES,First_showed,1,20,15,1,4,1,2,0.3670008182525635,right,Duża
+M20,9,SQUARES,First_showed,0,480,15,False,2,-,-,0.3502631187438965,left,Duża
+M20,10,SQUARES,First_showed,0,480,15,False,2,-,-,0.7502219676971436,left,Duża
+M20,11,SQUARES,First_showed,0,480,15,False,2,-,-,0.516934871673584,left,Duża
