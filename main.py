@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-# -*- coding: latin-1 -*-
+
 import atexit
 import codecs
 import csv
 import random
 from os.path import join
-import numpy as np
 
 import yaml
 from psychopy import visual, event, logging, gui, core
+from datetime import datetime
 
 from Adaptives.NUpNDown import NUpNDown
 
@@ -34,18 +34,11 @@ class QuestonVersion(object):
     FIRST_HIDDEN = 'First_hidden'
 
 
-class TriggerTypes(object):
-    CLEAR = 0x00
-    REST_START = 0x01
-    REST_END = 0x02
-    FIX_START = 0x04
-    TRIAL_START = 0x08
-    TRIAL_ANS = 0x10
-
-
 @atexit.register
-def save_beh_results():
-    with open(join('results', PART_ID + '_' + str(random.choice(range(100, 1000))) + '_beh.csv'), 'w') as beh_file:
+def save_beh_results() -> None:
+    now = datetime.now()
+    path = join('results', f'{PART_ID}_{now.strftime("%d-%m-%Y_%H-%M-%S")}_beh.csv')
+    with open(path, 'w', encoding='utf-8') as beh_file:
         beh_writer = csv.writer(beh_file)
         beh_writer.writerows(RESULTS)
     logging.flush()
@@ -80,11 +73,16 @@ def check_exit(key='f7'):
         abort_with_error('Experiment finished by user! {} pressed.'.format(key))
 
 
-def show_info(win, file_name, insert=''):
+def show_info(win: visual.Window, file_name: str, insert: str = '') -> None:
     """
-    Clear way to show info message into screen.
-    :param win:
-    :return:
+
+    Args:
+        win:
+        file_name:
+        insert:
+
+    Returns:
+
     """
     msg = read_text_from_file(file_name, insert=insert)
     msg = visual.TextStim(win, color='grey', text=msg, height=STIM_SIZE - 10, wrapWidth=SCREEN_RES[0])
@@ -153,23 +151,50 @@ def main():
         # === Load data, configure log ===
 
         response_clock = core.Clock()
-        conf = yaml.load(open(join('.', 'configs', f'{proc_version}_config.yaml')))
+        conf = yaml.load(open(join('.', 'configs', f'{proc_version}_config.yaml')), Loader=yaml.SafeLoader)
 
         show_info(win, join('.', 'messages', f'{proc_version}_before_training.txt'))
+
+        fix_time = conf['FIX_TIME']
         # === Training ===
 
-        training = NUpNDown(start_val=conf['START_SOA'], max_revs=conf['MAX_REVS'])
+        assert len(conf['TRAINING_TRIALS']) == len(conf["TRAINING_SOAS"]), "Conf error, training list incorrect"
 
-        old_rev_count_val = -1
-        correct_trials = 0
-        soas = []
-        fix_time = conf['TRAIN_FIX_TIME']
-        for idx, soa in enumerate(training):
+        idx = 0
+        for no_trials, soa in zip(conf['TRAINING_TRIALS'], conf['TRAINING_SOAS']):
+            for idx in range(idx + 1, no_trials + idx + 1):
+                corr, rt, stim_name, rating = run_trial(conf, version, fix_stim, fix_time, left_stim, right_stim, soa,
+                                                        win, arrow_label, question_text, response_clock)
+                RESULTS.append(
+                    [PART_ID, idx, proc_version, version, 'training', fix_time, conf['TIME'], corr, soa, '-', '-', rt,
+                     stim_name, rating])
+                # FEEDBACK
+                if corr == 1:
+                    feedb_msg = pos_feedb
+                elif corr == 0:
+                    feedb_msg = neg_feedb
+                else:
+                    feedb_msg = no_feedb
+                for _ in range(30):
+                    feedb_msg.draw()
+                    check_exit()
+                    win.flip()
+                win.flip()
+                # break + jitter
+                wait_time_in_secs: float = random.choice(range(*conf['REST_TIME_RANGE'])) / 60.0
+                core.wait(wait_time_in_secs)
+
+        # === Experiment ===
+
+        experiment = NUpNDown(start_val=conf['START_SOA'], max_revs=conf['MAX_REVS'])
+        old_rev_count_val: int = -1
+        soas: list = list()
+        show_info(win, join('.', 'messages', f'{proc_version}_feedback.txt'))
+        for idx, soa in enumerate(experiment, 1):
             corr, rt, stim_name, rating = run_trial(conf, version, fix_stim, fix_time, left_stim, right_stim, soa, win,
-                                                    arrow_label,
-                                                    question_text, response_clock)
-            training.set_corr(corr)
-            level, reversal, revs_count = map(int, training.get_jump_status())
+                                                    arrow_label, question_text, response_clock)
+            experiment.set_corr(corr)
+            level, reversal, revs_count = map(int, experiment.get_jump_status())
             if reversal:
                 soas.append(soa)
             if old_rev_count_val != revs_count:
@@ -179,48 +204,12 @@ def main():
                 rev_count_val = '-'
 
             RESULTS.append(
-                [PART_ID, idx, proc_version, version, 1, fix_time, conf['TIME'], int(corr), soa,
-                 reversal,
-                 rev_count_val, rt, stim_name, rating])
-
-            ### FEEDBACK
-            if corr == 1:
-                feedb_msg = pos_feedb
-            elif corr == 0:
-                feedb_msg = neg_feedb
-            else:
-                feedb_msg = no_feedb
-            for _ in range(30):
-                feedb_msg.draw()
-                check_exit()
-                win.flip()
-            # break + jitter
-            wait_time_in_secs = 1 + random.choice(range(0, 60)) / 60.0
-            core.wait(wait_time_in_secs)
-
-        # === Experiment ===
-        soa = int(np.mean(soas[:int(0.6 * len(soas))]))
-        experiment = [soa] * conf['NO_TRIALS']
-        fix_time = conf['EXP_FIX_TIME']
-        show_info(win, join('.', 'messages', f'{proc_version}_feedback.txt'))
-
-        for idx in range(idx, conf['NO_TRIALS'] + idx):
-            corr, rt, stim_name, rating = run_trial(conf, version, fix_stim, fix_time, left_stim, right_stim, soa, win,
-                                                    arrow_label,
-                                                    question_text, response_clock)
-            RESULTS.append(
-                [PART_ID, idx, proc_version, version, 0, fix_time, conf['TIME'], corr, soa, '-', '-', rt, stim_name,
-                 rating])
+                [PART_ID, idx, proc_version, version, 'exp', fix_time, conf['TIME'], corr, soa, reversal, rev_count_val,
+                 rt, stim_name, rating])
 
             # break + jitter
-            wait_time_in_secs = 1 + random.choice(range(0, 60)) / 60.0
+            wait_time_in_secs: float = random.choice(range(*conf['REST_TIME_RANGE'])) / 60.0
             core.wait(wait_time_in_secs)
-
-    show_info(win, join('.', 'messages', 'iaf.txt'))
-    fix_cross = visual.TextStim(win, text=u"+", color='grey', height=60, pos=(0, 0))
-    fix_cross.draw()
-    win.flip()
-    core.wait(conf['RESTTIME'])
 
     # === Cleaning time ===
     save_beh_results()
@@ -262,7 +251,7 @@ def run_trial(config, version, fix_stim, fix_time, left_stim, right_stim, soa, w
             stim.draw()
             win.flip()
             check_exit()
-    corr = False  # Used if timeout
+    corr = -1  # Used if timeout
     win.callOnFlip(response_clock.reset)
     event.clearEvents()
     for _ in range(config['RTIME']):  # Time for reaction
@@ -278,16 +267,15 @@ def run_trial(config, version, fix_stim, fix_time, left_stim, right_stim, soa, w
     if version == QuestonVersion.FIRST_HIDDEN:  # Yep, I know, that's ugly
         corr = not corr
 
-    # Rating Scale
-    ratingScale = visual.RatingScale(win, size=0.8, noMouse=True,
-                                     markerStart=2, stretch=1.4,
-                                     scale="Okre\u015bl swoj\u0105 pewno\u015b\u0107 co do udzielonej odpowiedzi",
-                                     acceptPreText='Wybierz',
-                                     choices=["\u017badna", "Ma\u0142a", "Du\u017ca", "Ca\u0142kowita"])
-    while ratingScale.noResponse:
-        ratingScale.draw()
-        win.flip()
-    rating = ratingScale.getRating()
+    # # Rating Scale
+    rating = '-'
+    # rating_scale = visual.RatingScale(win, size=0.8, noMouse=True, markerStart=2, stretch=1.4, acceptPreText='Wybierz',
+    #                                   scale="Okre\u015bl swoj\u0105 pewno\u015b\u0107 co do udzielonej odpowiedzi",
+    #                                   choices=["\u017badna", "Ma\u0142a", "Du\u017ca", "Ca\u0142kowita"])
+    # while rating_scale.noResponse:
+    #     rating_scale.draw()
+    #     win.flip()
+    # rating = rating_scale.getRating()
     win.flip()
 
     return corr, rt, stim_name, rating
