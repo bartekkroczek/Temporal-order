@@ -4,11 +4,11 @@ import atexit
 import codecs
 import csv
 import random
+from datetime import datetime
 from os.path import join
 
 import yaml
 from psychopy import visual, event, logging, gui, core
-from datetime import datetime
 
 from Adaptives.NUpNDown import NUpNDown
 
@@ -140,8 +140,8 @@ def main():
         else:
             raise NotImplementedError('Procedures working only with Squares or Circles')
 
-        # fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
-        fix_stim = visual.ImageStim(win, image=join('.', 'stims', 'PRE_STIMULI.bmp'))
+        fix_stim = visual.TextStim(win, text='+', height=100, color=STIM_COLOR)
+        # fix_stim = visual.ImageStim(win, image=join('.', 'stims', 'PRE_STIMULI.bmp'))
         arrow_label = visual.TextStim(win, text=u"\u2190       \u2192", color=STIM_COLOR, height=30,
                                       pos=(0, -200))
 
@@ -212,7 +212,6 @@ def main():
             core.wait(wait_time_in_secs)
 
     # === Cleaning time ===
-    save_beh_results()
     logging.flush()
     show_info(win, join('.', 'messages', 'end.txt'))
     win.close()

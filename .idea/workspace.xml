@@ -4,52 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e6aa5ba-577f-4bcd-9012-f9a0119fce65" name="Changes" comment="EEG support removed">
-      <change beforePath="$PROJECT_DIR$/.idea/Temporal-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Temporal-order.iml" afterDir="false" />
+    <list default="true" id="9e6aa5ba-577f-4bcd-9012-f9a0119fce65" name="Changes" comment="Ready for pilot.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/CIRCLES_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/CIRCLES_config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/SQUARES_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/SQUARES_config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/11M21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/11M21_435_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/11M21_893_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/22K22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/22K22_421_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/22K22_472_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/22K22_807_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/33K25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/33K25_184_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/33K25_557_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/44K28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/44K28_120_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/44K28_205_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/55K28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/55K28_659_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/55K28_836_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/66M18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/66M18_497_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/66M18_847_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/7M21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/7M21_223_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/7M21_682_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/8K22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/8K22_634_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/8K22_654_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/99K28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/99K28_313_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/99K28_828_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/M20.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_158_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_170_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_205_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_209_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_705_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_725_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20_978_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/_736_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/videoM20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/videoM20_529_beh.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/videoM20_530_beh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/CIRCLES_before_training.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/CIRCLES_before_training.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/CIRCLES_feedback.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/CIRCLES_feedback.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/SQUARES_before_training.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/SQUARES_before_training.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/SQUARES_feedback.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/SQUARES_feedback.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/end.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/end.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/iaf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/M20.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +93,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668427293991</updated>
-      <workItem from="1668427298715" duration="9683000" />
+      <workItem from="1668427298715" duration="10051000" />
+      <workItem from="1668677078930" duration="10000" />
+      <workItem from="1668685885340" duration="482000" />
+      <workItem from="1668792502914" duration="23000" />
+      <workItem from="1668792661897" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="EEG support removed">
       <created>1668427707161</created>
@@ -136,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668427707161</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ready for pilot.">
+      <created>1668438486702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668438486702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,9 +132,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EEG support removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="EEG support removed" />
+    <MESSAGE value="Ready for pilot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready for pilot." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Temporal_order$main.coverage" NAME="main Coverage Results" MODIFIED="1668437036410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Temporal_order$main.coverage" NAME="main Coverage Results" MODIFIED="1668794758695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

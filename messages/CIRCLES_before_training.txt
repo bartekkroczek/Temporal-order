@@ -1,12 +1,12 @@
 ﻿Brawo, skończyłeś pierwsze zadanie.
 
 W kolejnym zadaniu będziesz dla odmiany, decydować, która z dwóch figur ZNIKŁA PIERWSZA.
-Na początku na ekranie będą wyswietlać się dwie figury obok siebie.
-Następnie figury znikną, zawsze jedna nieco wczesniej niż druga.
+Na początku na ekranie będą wyświetlać się dwie figury obok siebie.
+Następnie figury znikną, zawsze jedna nieco wczesnej niż druga.
 
 UWAGA! Łatwo się pomylić i wykonywać zadanie na odwrót, upewnij się, że rozumiesz:
 
-Naciśnij lewą strzałkę jeśli to po lewej stronie figura ZNIKŁA PIERWSZA
-lub prawą strzałkę jeśli to po prawej stronie figura ZNIKŁA PIERWSZA
+Naciśnij lewą strzałkę, jeśli to po lewej stronie figura ZNIKŁA PIERWSZA
+lub prawą strzałkę, jeśli to po prawej stronie figura ZNIKŁA PIERWSZA
 
-Nacisnij SPACJĘ by przejść do treningu
+Naciśnij SPACJĘ, by przejść do treningu

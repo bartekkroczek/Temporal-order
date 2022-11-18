@@ -1,5 +1,5 @@
 # All values in no. of frames.
-TRAINING_TRIALS: [3, 3]
+TRAINING_TRIALS: [10, 10]
 TRAINING_SOAS: [8, 3]
 # both above list must be equal in length
 START_SOA: 3
@@ -8,6 +8,6 @@ REST_TIME_RANGE: [45, 60]
 DELAY: 4
 TIME: 15 # Mask presentation time
 RTIME: 240 # Maximal response time
-MAX_REVS: 3 # No of reversals in adaptive alg.
+MAX_REVS: 10 # No of reversals in adaptive alg.
 STEP_UP: 2
 STEP_DOWN: 1
