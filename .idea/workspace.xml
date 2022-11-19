@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e6aa5ba-577f-4bcd-9012-f9a0119fce65" name="Changes" comment="Ready for pilot.">
+    <list default="true" id="9e6aa5ba-577f-4bcd-9012-f9a0119fce65" name="Changes" comment="Ready for Rouder, 2022 replication.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/CIRCLES_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/CIRCLES_config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/SQUARES_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/SQUARES_config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/CIRCLES_before_training.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/CIRCLES_before_training.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/CIRCLES_feedback.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/CIRCLES_feedback.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/SQUARES_before_training.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/SQUARES_before_training.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/SQUARES_feedback.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/SQUARES_feedback.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/end.txt" beforeDir="false" afterPath="$PROJECT_DIR$/messages/end.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages/iaf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/M20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/M20.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/M20.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,8 @@
       <workItem from="1668677078930" duration="10000" />
       <workItem from="1668685885340" duration="482000" />
       <workItem from="1668792502914" duration="23000" />
-      <workItem from="1668792661897" duration="2081000" />
+      <workItem from="1668792661897" duration="2932000" />
+      <workItem from="1668880781658" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="EEG support removed">
       <created>1668427707161</created>
@@ -113,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668438486702</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ready for Rouder, 2022 replication.">
+      <created>1668795035061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668795035061</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,9 +135,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EEG support removed" />
     <MESSAGE value="Ready for pilot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready for pilot." />
+    <MESSAGE value="Ready for Rouder, 2022 replication." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready for Rouder, 2022 replication." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Temporal_order$main.coverage" NAME="main Coverage Results" MODIFIED="1668794758695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Temporal_order$main.coverage" NAME="main Coverage Results" MODIFIED="1668881108186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

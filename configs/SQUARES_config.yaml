@@ -9,5 +9,5 @@ DELAY: 4
 TIME: 15 # Mask presentation time
 RTIME: 240 # Maximal response time
 MAX_REVS: 10 # No of reversals in adaptive alg.
-STEP_UP: 2
-STEP_DOWN: 1
+N_UP: 2
+N_DOWN: 1
